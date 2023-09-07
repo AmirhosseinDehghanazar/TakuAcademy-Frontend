@@ -2,17 +2,19 @@
   margin: auto 3vw;
 }
 
+/* class fro search div to show it in specific size */
 .search-div {
   width: 44px;
   height: 44px;
   border-radius: 12px;
 }
-
+/* sidebar button: rightside of Logo */
 .sidebar_taggle {
   border: 1px solid white;
   background-color: #2a2a72;
 }
 
+/* dropdown menu it's hidden and only shows on hover */
 .dropdown-menu {
   display: none;
   min-width: 160px;
@@ -20,21 +22,23 @@
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-
+/*target all links inside dropsown menu */
 .dropdown-menu > a {
   padding: 12px 16px;
   display: block;
 }
-
+/* css for links inside dropdown when they are hover hovered*/
 .dropdown-menu > a:hover {
   transition: background-color 0.15s;
   background-color: rgba(46, 46, 197, 0.322);
 }
-
+/* this class helps to show dropdown menu */
 .dropdown:hover .dropdown-menu {
   display: block;
 }
 
+/* these two class below is for arrow down
+ for showing a cool transform on hover*/
 .arrow {
   transition: transform 0.17s;
 }
@@ -42,6 +46,9 @@
   transform: rotate(180deg);
 }
 
+/* classes below are css transition for main links in navbar
+if you are worry about webkit let me tell you they are suported by
+more than 95% of browers & main browers except useless IE */
 .link-hover {
   background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #fff 50%);
   background-size: 200% 100%;

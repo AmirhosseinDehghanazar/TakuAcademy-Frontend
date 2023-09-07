@@ -1,0 +1,63 @@
+.bg-flash {
+  background: url("../../../assets/header/Vector5.png");
+  height: 6px;
+  width: 18px;
+}
+
+.background-props {
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  background-repeat: no-repeat;
+  transition: transform 0.15s;
+}
+
+.bg-arrow-w {
+  background: url("../../../assets/header/arrow.png");
+  margin-right: 10px;
+  width: 16px;
+  height: 10px;
+}
+.bg-arrow-b {
+  background: url("../../../assets/header/arrow-black.png");
+  margin-right: 10px;
+  width: 16px;
+  height: 10px;
+}
+
+.bg-underLine {
+  background: url("../../../assets/header/Vector.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-height: 8px;
+}
+
+.button-element:hover > .bg-arrow {
+  transform: translateX(-10px);
+}
+
+.string {
+  font-family: "Peyda";
+}
+
+@media screen and (max-width: 768px) {
+  .ladyPic {
+    max-width: 300px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .ladyPic {
+    max-width: 490px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .ladyPic {
+    max-width: 600px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .ladyPic {
+    max-width: 780px;
+  }
+}

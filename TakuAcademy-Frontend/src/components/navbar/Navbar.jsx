@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <div className="my-5">
       {/* parent */}
-      <div className="flex justify-around gap-5 sm:gap-32 md:gap-60 lg:gap-16 transition-all items-center navbar">
+      <div className="flex justify-around gap-5 sm:gap-32 md:gap-60 lg:gap-16 xl:gap-36 transition-all items-center navbar">
         {/* firat part of nav includes: menue & logo */}
         <div className="flex items-center justify-center gap-4">
           <div className="flex items-center justify-center search-div sidebar_taggle lg:hidden">
@@ -38,14 +38,18 @@ const Navbar = () => {
         {/* firstpart ends here */}
 
         {/* this component have links and is hidden until screen is large */}
-        <div className="hidden lg:flex gap-8 xl:gap-11 transition-all">
+        <div className="hidden lg:flex gap-8 xl:gap-11 2xl:gap-14 transition-all">
           <div>
-            <a href="#">صفحه اصلی</a>
+            <a className="link-hover" href="#">
+              صفحه اصلی
+            </a>
           </div>
           {/* this one needs dropdown(below) */}
-          <div className="flex items-center gap-2 dropdown relative">
-            <a href="#">دوره‌ها</a>
-            <img className="arrow" src={arrow} />
+          <div className="flex items-center gap-2  dropdown relative">
+            <a className="transition-all hover:text-cyan-600" href="#">
+              دوره‌ها
+            </a>
+            <img className="arrow mt-1" src={arrow} />
             <div className="dropdown-menu absolute top-6 rounded-lg overflow-hidden">
               <a href="#">یک</a>
               <a href="#">دو</a>
@@ -54,13 +58,19 @@ const Navbar = () => {
             </div>
           </div>
           <div>
-            <a href="#">مدرسین</a>
+            <a className="link-hover" href="#">
+              مدرسین
+            </a>
           </div>
           <div>
-            <a href="#">درباره‌ما</a>
+            <a className="link-hover" href="#">
+              درباره‌ما
+            </a>
           </div>
           <div>
-            <a href="#">پشتیبانی</a>
+            <a className="link-hover" href="#">
+              پشتیبانی
+            </a>
           </div>
         </div>
 

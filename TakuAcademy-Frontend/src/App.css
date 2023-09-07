@@ -1,3 +1,8 @@
 .bg-gradient {
   background: linear-gradient(to left, #2a2a72, #0c8ce9);
+  transition: opacity 0.15s;
+}
+
+.bg-gradient:hover {
+  opacity: 0.8;
 }

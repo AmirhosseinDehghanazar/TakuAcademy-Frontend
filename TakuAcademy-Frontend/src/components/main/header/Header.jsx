@@ -28,7 +28,7 @@ const Header = () => {
     <div className="flex flex-col lg:flex-row-reverse lg:justify-between lg:items-center md:ms-11 lg:mx-5 ">
       {/* first part:bitch */}
       <div className="mx-auto">
-        <img className="ladyPic" src={lady} />
+        <img className="ladyPic transition-all" src={lady} />
       </div>
 
       {/* second part:texts */}

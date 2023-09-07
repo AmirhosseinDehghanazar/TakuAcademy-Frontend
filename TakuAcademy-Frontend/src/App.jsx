@@ -1,11 +1,9 @@
-import { useState } from "react";
-
 import "./App.css";
 
 function App() {
   return (
     <>
-      <div>TAKU</div>
+      <div className="text-cusOrange">TAKU-Academy</div>
     </>
   );
 }

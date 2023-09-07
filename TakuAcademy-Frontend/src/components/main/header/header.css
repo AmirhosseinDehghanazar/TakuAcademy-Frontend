@@ -40,3 +40,18 @@
 .string {
   font-family: "Peyda";
 }
+
+.floating-image {
+  /* position: absolute; */
+  animation: float 3s ease infinite; /* Customize animation duration and timing function */
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px); /* Adjust the floating height */
+  }
+}

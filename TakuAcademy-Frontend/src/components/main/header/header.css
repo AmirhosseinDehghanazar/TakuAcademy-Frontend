@@ -40,24 +40,3 @@
 .string {
   font-family: "Peyda";
 }
-
-@media screen and (max-width: 768px) {
-  .ladyPic {
-    max-width: 300px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .ladyPic {
-    max-width: 490px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .ladyPic {
-    max-width: 600px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .ladyPic {
-    max-width: 700px;
-  }
-}

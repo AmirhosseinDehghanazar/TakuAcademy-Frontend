@@ -25,21 +25,21 @@ const Header = () => {
   ];
 
   return (
-    <div className="flex flex-col lg:flex-row-reverse lg:justify-between lg:items-center md:ms-11 lg:mx-5 ">
+    <div className="flex flex-col lg:flex-row-reverse lg:justify-center lg:items-center md:ms-11 lg:mx-5 ">
       {/* first part:bitch */}
       <div className="mx-auto">
-        <img className="ladyPic transition-all" src={lady} />
+        <img className="object-cover transition-all" src={lady} />
       </div>
 
       {/* second part:texts */}
-      <div className="flex flex-col mx-7  lg:ms-20  xl:ms-40 max-w-screen-md">
+      <div className="flex flex-col mx-7  xl:ms-40 max-w-screen-sm">
         {/* first part of texts */}
         <div className="flex gap-2 items-center text-start">
           <div className="background-props bg-flash bg-slate-500"></div>
           <p>آکادمی تاکو</p>
         </div>
         {/* intro */}
-        <div className="text-4xl font-bold leading-normal">
+        <div className="text-4xl font-bold leading-normal xl:text-6xl">
           آموزشی با کیفیت با اساتید برجسته در تمام حوزه‌های علوم کامپیوتر
         </div>
         {/* lorem */}

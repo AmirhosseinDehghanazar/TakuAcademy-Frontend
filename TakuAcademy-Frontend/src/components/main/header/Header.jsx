@@ -25,14 +25,14 @@ const Header = () => {
   ];
 
   return (
-    <div className="flex flex-col lg:flex-row-reverse lg:justify-center lg:items-center md:ms-11">
+    <div className="flex flex-col lg:flex-row-reverse lg:justify-between lg:items-center md:ms-11 lg:mx-5 ">
       {/* first part:bitch */}
       <div className="mx-auto">
         <img className="ladyPic" src={lady} />
       </div>
 
       {/* second part:texts */}
-      <div className="flex flex-col mx-7 lg:max-w-md lg:ms-20">
+      <div className="flex flex-col mx-7  lg:ms-20  xl:ms-40 max-w-screen-md">
         {/* first part of texts */}
         <div className="flex gap-2 items-center text-start">
           <div className="background-props bg-flash bg-slate-500"></div>

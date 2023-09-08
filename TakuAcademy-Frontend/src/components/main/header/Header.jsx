@@ -50,16 +50,16 @@ const Header = () => {
 
   return (
     <div className="flex flex-col lg:flex-row-reverse lg:justify-center lg:items-center md:ms-11 lg:mx-5">
-      {/* first part:bitch */}
+      {/* first part: image */}
       <div className="mx-auto">
         <img
-          className="object-cover transition-all floating-image"
+          className="object-cover transition-all floating-image md:max-w-lg xl:max-w-2xl"
           src={lady}
         />
       </div>
 
       {/* second part:texts */}
-      <div className="flex flex-col mx-7  xl:ms-40 max-w-screen-sm">
+      <div className="flex flex-col mx-7  xl:ms-40 max-w-screen-sm xl:max-w-screen-md">
         {/* first part of texts */}
         <div className="flex gap-2 items-center text-start">
           <div className="background-props bg-flash bg-slate-500"></div>
@@ -70,7 +70,7 @@ const Header = () => {
           آموزشی با کیفیت با اساتید برجسته در تمام حوزه‌های علوم کامپیوتر
         </div>
         {/* lorem */}
-        <div className="my-3 leading-loose">
+        <div className="my-5 leading-loose">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
           از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
           سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
@@ -81,27 +81,27 @@ const Header = () => {
           <a href="#">
             <button className="w-full bg-gradient rounded-lg py-2.5 button-element md:px-5">
               مشاهده دوره‌ها
-              <span className="background-props bg-arrow-w"></span>
+              <span className="background-props bg-arrow bg-arrow-w"></span>
             </button>
           </a>
 
           <a href="#">
             <button className="w-full bg-cusWhite text-cusBlack rounded-lg py-2.5 button-element md:px-5">
               مشاهده دوره‌ها
-              <span className="background-props bg-arrow-b"></span>
+              <span className="background-props bg-arrow bg-arrow-b"></span>
             </button>
           </a>
         </div>
 
         {/* React Number Format */}
-        <div className="flex justify-center gap-4 md:gap-16 lg:gap-7 my-6 items-center">
+        <div className="flex justify-center lg:justify-start gap-4 md:gap-16 lg:gap-7 my-6 items-center">
           {numbersData.map((data, index) => (
             <div className="flex flex-col items-center" key={index}>
-              <span className="font-semibold">
+              <span className="font-semibold lg:text-xl">
                 <CustomNumeralNumericFormat value={counts[index]} />+
               </span>
               <div className="background-props bg-underLine"></div>
-              <div className="text-sm md:text-lg whitespace-nowrap my-2">
+              <div className="text-sm md:text-lg xl:text-xl whitespace-nowrap my-2">
                 {data.subject}
               </div>
             </div>

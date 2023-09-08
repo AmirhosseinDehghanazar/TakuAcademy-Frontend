@@ -12,17 +12,16 @@
   transition: transform 0.15s;
 }
 
-.bg-arrow-w {
-  background: url("../../../assets/header/arrow.png");
+.bg-arrow {
   margin-right: 10px;
   width: 16px;
   height: 10px;
 }
+.bg-arrow-w {
+  background: url("../../../assets/header/arrow.png");
+}
 .bg-arrow-b {
   background: url("../../../assets/header/arrow-black.png");
-  margin-right: 10px;
-  width: 16px;
-  height: 10px;
 }
 
 .bg-underLine {

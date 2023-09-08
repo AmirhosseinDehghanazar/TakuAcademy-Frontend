@@ -1,0 +1,23 @@
+.shy-div {
+  background-color: #185a9c;
+  min-width: 102%;
+  position: absolute;
+  right: -1%;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.bg-rocket {
+  background-repeat: no-repeat;
+  background: url("../../../assets/segment/rocket.png");
+}
+.bg-cube {
+  align-items: center;
+  background-color: #add8e6;
+  color: #1e1e1e;
+}
+
+.thin-border {
+  border: solid 1px #798086;
+}

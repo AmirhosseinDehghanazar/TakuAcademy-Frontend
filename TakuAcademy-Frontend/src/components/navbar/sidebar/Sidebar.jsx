@@ -24,15 +24,18 @@ const Sidebar = ({ sidebar, closeSidebar }) => {
 
       {/* this one needs dropdown(below) */}
       <div className="flex items-center gap-2  dropsown-sidebar relative">
-        <button onClick={() => setShowLinks((prev) => !prev)}>
+        <button
+          className="flex items-center gap-2"
+          onClick={() => setShowLinks((prev) => !prev)}
+        >
           <a className="transition-all hover:text-cyan-600" href="#">
             دوره‌ها
           </a>
+          <img
+            className={showLinks ? "arrow mt-1 rotate-180" : "arrow mt-1 "}
+            src={arrow}
+          />
         </button>
-        <img
-          className={showLinks ? "arrow mt-1 rotate-180" : "arrow mt-1 "}
-          src={arrow}
-        />
       </div>
       {/* this dropdown link similar to the
        navbar but this on is onClick that one onHover*/}

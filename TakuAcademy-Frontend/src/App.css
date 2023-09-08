@@ -27,3 +27,11 @@
   background-size: contain;
   background-position: center;
 }
+
+.mar-x {
+  margin: auto 7.5%;
+}
+
+.thin-border {
+  border: solid 1px #798086;
+}

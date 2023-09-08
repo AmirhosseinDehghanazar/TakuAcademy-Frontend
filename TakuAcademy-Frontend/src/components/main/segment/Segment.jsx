@@ -3,9 +3,9 @@ import "./segment.css";
 
 const Segment = () => {
   return (
-    <div className="mx-8 md:mx-10 lg:mx-16 xl:mx-20 2xl:mx-24 mt-20 relative">
+    <div className="mar-x mt-12 relative">
       {/* element below is the blue Rectangle over the over one */}
-      <div className="h-48 thin-border rounded-lg bg-cusDarkBlue rounded-20">
+      <div className="h-48 mb-16 thin-border rounded-lg bg-cusDarkBlue rounded-20">
         {/* this div contains texts and manage them the texts on top */}
         <div className="flex justify-between items-center  mx-3 md:mx-6">
           <div className="flex flex-col">

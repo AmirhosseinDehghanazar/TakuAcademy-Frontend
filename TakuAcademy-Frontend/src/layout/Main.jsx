@@ -3,6 +3,7 @@ import Navbar from "../components/navbar/Navbar";
 import Header from "../components/main/header/header";
 import Segment from "../components/main/segment/Segment";
 import Courses from "../components/main/courses/Courses";
+import Question from "../components/main/question/Question";
 
 const Main = () => {
   return (
@@ -11,6 +12,7 @@ const Main = () => {
       <Header />
       <Segment />
       <Courses />
+      <Question />
     </div>
   );
 };

@@ -22,7 +22,7 @@ const Courses = () => {
   return (
     <div className="mar-x">
       {/* text & type of courses */}
-      <div className="flex flex-col justify-between items-center gap-8 md:flex-row ">
+      <div className="flex flex-col justify-between xl:justify-around items-center gap-8 xl:gap-0 md:flex-row ">
         <div className="flex flex-col items-start ">
           <div className="flex justify-center items-center gap-2">
             <div className="bg-flash"></div>

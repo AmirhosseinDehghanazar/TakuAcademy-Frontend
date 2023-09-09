@@ -79,14 +79,14 @@ const Header = () => {
         {/*two buttons parent */}
         <div className="flex flex-col gap-3 md:flex-row text-center my-4 w-full">
           <a href="#">
-            <button className="w-full bg-gradient rounded-lg py-2.5 button-element md:px-5">
+            <button className="w-full bg-gradient rounded-lg py-2.5 arrow-btn md:px-5">
               مشاهده دوره‌ها
               <span className="background-props bg-arrow bg-arrow-w"></span>
             </button>
           </a>
 
           <a href="#">
-            <button className="w-full bg-cusWhite text-cusBlack rounded-lg py-2.5 button-element md:px-5">
+            <button className="w-full bg-cusWhite text-cusBlack rounded-lg py-2.5 arrow-btn md:px-5">
               مشاهده دوره‌ها
               <span className="background-props bg-arrow bg-arrow-b"></span>
             </button>

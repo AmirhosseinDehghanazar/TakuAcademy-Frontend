@@ -3,7 +3,7 @@ import "./courses.css";
 import data from "./cardsData";
 
 import React, { useState } from "react";
-import Card from "./Card";
+import Card from "./card/Card";
 
 const Courses = () => {
   const [value, setValue] = useState(0);
@@ -21,8 +21,8 @@ const Courses = () => {
 
   return (
     <div className="mar-x">
-      {/* text & type of courses */}
-      <div className="flex flex-col justify-between xl:justify-around items-center gap-8 xl:gap-0 md:flex-row ">
+      {/* text & type of courses buttons */}
+      <div className="flex flex-col justify-between xl:justify-around items-center type-text-div md:flex-row ">
         <div className="flex flex-col items-start ">
           <div className="flex justify-center items-center gap-2">
             <div className="bg-flash"></div>
@@ -50,7 +50,7 @@ const Courses = () => {
       </div>
 
       {/* courses */}
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mar-x gap-4 pt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:mar-x gap-4 2xl:gap-x-0 pt-10">
         {data.map((course, i) => (
           <Card key={i} course={course} />
         ))}

@@ -18,10 +18,6 @@
   min-height: 8px;
 }
 
-.button-element:hover > .bg-arrow {
-  transform: translateX(-10px);
-}
-
 .string {
   font-family: "Peyda";
 }

@@ -1,0 +1,18 @@
+/* this css is for card maindiv in card */
+.bg-card {
+  background-color: #371d74;
+  min-width: 294px;
+}
+/* css for type of the course in card: "فرانت اند" */
+.bg-type {
+  background-color: #5d4792;
+  padding: 0.6rem 1.2rem;
+  border-radius: 48px;
+}
+/* teacher detail in card */
+.teacher-detail {
+  border-top: 1px;
+  border-bottom: 1px;
+  border-color: rgba(255, 255, 255, 0.06);
+  border-style: solid;
+}

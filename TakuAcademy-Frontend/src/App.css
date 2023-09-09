@@ -8,12 +8,17 @@
 }
 
 .bg-arrow {
-  margin-right: 10px;
+  margin-right: 5px;
   width: 16px;
   height: 10px;
 }
 .bg-arrow-w {
   background: url("./assets/header/arrow.png");
+}
+
+.arrow-btn:hover > .bg-arrow {
+  transform: translateX(-10px);
+  transition: transform 0.15s;
 }
 
 .bg-flash {

@@ -49,7 +49,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center pt-16 md:pt-2 lg:flex-row-reverse lg:justify-center lg:items-center md:ms-11 lg:mx-5">
+    <div className="flex my-12 flex-col mar-x items-center pt-16 md:pt-2 lg:flex-row-reverse lg:justify-center lg:items-center  md:ms-11 lg:mx-5">
       {/* first part: image */}
       <div className="mx-auto">
         <img
@@ -59,7 +59,7 @@ const Header = () => {
       </div>
 
       {/* second part:texts */}
-      <div className="flex flex-col mx-7  xl:ms-40 max-w-screen-sm xl:max-w-screen-md">
+      <div className="flex flex-col mar-x max-w-screen-sm xl:max-w-screen-lg">
         {/* first part of texts */}
         <div className="flex gap-2 items-center text-start">
           <div className="background-props bg-flash bg-slate-500"></div>

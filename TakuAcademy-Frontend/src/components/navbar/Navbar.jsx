@@ -26,7 +26,7 @@ const Navbar = () => {
 
       <div>
         {/* parent */}
-        <div className="flex  py-3 navbar fixed md:relative w-full justify-around gap-5 sm:gap-32 md:gap-60 lg:gap-16 xl:gap-36 transition-all items-center navbar">
+        <div className="flex py-3 navbar fixed md:relative w-full justify-around gap-5 sm:gap-32 md:gap-60 lg:gap-16 xl:gap-36 transition-all items-center navbar">
           {/* firat part of nav includes: menue & logo */}
           <div className="flex items-center justify-center gap-4">
             <div className="flex items-center justify-center search-div sidebar_taggle lg:hidden">

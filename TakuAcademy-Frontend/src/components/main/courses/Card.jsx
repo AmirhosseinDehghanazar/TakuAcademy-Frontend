@@ -4,12 +4,12 @@ import taha from "../../../assets/card/taha-khoshgele.png";
 
 const Card = ({ course }) => {
   return (
-    <div className="max-w-sm thin-border rounded-xl overflow-hidden shadow-lg">
+    <div className=" max-w-sm thin-border rounded-xl overflow-hidden shadow-lg">
       <img className="w-full" src={course.img} alt="Sunset in the mountains" />
       <div className="px-6 py-4">
         {/* type and time  */}
         <div className="flex justify-between items-center">
-          <p className="text-md">
+          <p className="text-gray-300/90">
             <CustomNumeralNumericFormat value={course.time} /> ساعت آموزش
           </p>
           <button className="">{course.type}</button>

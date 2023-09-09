@@ -29,7 +29,8 @@
 }
 
 .mar-x {
-  margin: auto 7.5%;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
 }
 
 .thin-border {

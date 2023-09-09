@@ -6,7 +6,7 @@ const Question = () => {
   return (
     <div className="flex mar-x flex-col-reverse question-parent justify-center items-center lg:flex-row my-24">
       {/* image element */}
-      <div className="">
+      <div>
         <img
           className="object-cover transition-all md:max-w-lg xl:max-w-2xl"
           src={question}
@@ -14,11 +14,11 @@ const Question = () => {
       </div>
 
       {/* question and reasons */}
-      <div className="flex flex-col justify-center gap-5">
+      <div className="flex md:text-lg xl:text-xl flex-col justify-center gap-5">
         {/* why taku */}
-        <div className="flex flex-col w-52">
-          <div className="font-bold text-3xl">چرا تاکو آکادمی؟</div>
-          <div className="bg-under w-44 h-2" />
+        <div className="flex flex-col w-52 lg:w-96">
+          <div className="font-bold text-3xl lg:text-5xl">چرا تاکو آکادمی؟</div>
+          <div className="bg-under w-44 lg:w-72 h-2 lg:h-3" />
         </div>
 
         {/* reasons */}

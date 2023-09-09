@@ -1,3 +1,34 @@
 .question-parent {
-  gap: 10vw;
+  gap: 6vw;
+}
+
+.bg-dart {
+  background: url("../../../assets/question/icon1.png");
+}
+.bg-check {
+  background: url("../../../assets/question/icon2.png");
+}
+.bg-up {
+  background: url("../../../assets/question/icon3.png");
+}
+.bg-per {
+  background: url("../../../assets/question/icon4.png");
+}
+.bg-person {
+  background: url("../../../assets/question/icon5.png");
+}
+.bg-chat {
+  background: url("../../../assets/question/icon6.png");
+}
+.bg-under {
+  background: url("../../../assets/question/qVector.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bg-all {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  background-color: #41355d;
 }

@@ -8,7 +8,7 @@ import Comment from "../components/main/comment/Comment";
 
 const Main = () => {
   return (
-    <div>
+    <div className="mt-5">
       <Navbar />
       <Header />
       <Segment />

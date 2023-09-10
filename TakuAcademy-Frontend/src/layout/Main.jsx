@@ -5,6 +5,7 @@ import Segment from "../components/main/segment/Segment";
 import Courses from "../components/main/courses/Courses";
 import Question from "../components/main/question/Question";
 import Comment from "../components/main/comment/Comment";
+import Footer from "../components/footer/Footer";
 
 const Main = () => {
   return (
@@ -15,6 +16,7 @@ const Main = () => {
       <Courses />
       <Question />
       <Comment />
+      <Footer />
     </div>
   );
 };

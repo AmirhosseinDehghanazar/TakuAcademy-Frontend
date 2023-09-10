@@ -23,32 +23,32 @@ const Question = () => {
 
         {/* reasons */}
         <div className="flex justify-start items-center gap-4">
-          <div className="bg-all bg-dart p-6 border rounded-full" />
+          <div className="bg-icon bg-dart p-6 border rounded-full" />
           <div>چون نمیزاره شما گیج بشید و یا راهی که دارید رو گم کنید.</div>
         </div>
 
         <div className="flex justify-start items-center gap-4">
-          <div className="bg-all bg-check  p-6 border rounded-full" />
+          <div className="bg-icon bg-check  p-6 border rounded-full" />
           <div>۰ تا ۱۰۰ هر حوزه‌ای رو بدون پیش نیاز بهتون یاد میده.</div>
         </div>
 
         <div className="flex justify-start items-center gap-4">
-          <div className="bg-all bg-up  p-6 border rounded-full" />
+          <div className="bg-icon bg-up  p-6 border rounded-full" />
           <div>با توجه به عملکرد شما رایگان بهتون فضای پیشرفت داده میشه.</div>
         </div>
 
         <div className="flex justify-start items-center gap-4">
-          <div className="bg-all bg-per  p-6 border rounded-full" />
+          <div className="bg-icon bg-per  p-6 border rounded-full" />
           <div>چون یا رایگانه یا خیلی ارزون :))</div>
         </div>
 
         <div className="flex justify-start items-center gap-4">
-          <div className="bg-all bg-person  p-6 border rounded-full" />
+          <div className="bg-icon bg-person  p-6 border rounded-full" />
           <div>چون بهترین اساتید رو برای تدریس در اختیارتون قرار میده.</div>
         </div>
 
         <div className="flex justify-around items-center gap-4">
-          <div className="bg-all bg-chat  p-6 border rounded-full" />
+          <div className="bg-icon bg-chat  p-6 border rounded-full" />
           <div>
             چون پشتیبان‌های ما همیشه پیگیر روند شما و راهنمایی شما هستن.
           </div>

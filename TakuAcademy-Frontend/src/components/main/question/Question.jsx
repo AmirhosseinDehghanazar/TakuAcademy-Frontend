@@ -18,7 +18,7 @@ const Question = () => {
         {/* why taku */}
         <div className="flex flex-col w-52 lg:w-96">
           <div className="font-bold text-3xl lg:text-5xl">چرا تاکو آکادمی؟</div>
-          <div className="bg-under w-44 lg:w-72 h-2 lg:h-3" />
+          <div className="bg-margin bg-under w-44 lg:w-72 h-2 lg:h-3" />
         </div>
 
         {/* reasons */}

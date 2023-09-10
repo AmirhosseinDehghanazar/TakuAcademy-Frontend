@@ -9,7 +9,7 @@ import Footer from "../components/footer/Footer";
 
 const Main = () => {
   return (
-    <div>
+    <div className="mt-5">
       <Navbar />
       <Header />
       <Segment />

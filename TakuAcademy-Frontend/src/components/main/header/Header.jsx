@@ -66,9 +66,16 @@ const Header = () => {
           <p>آکادمی تاکو</p>
         </div>
         {/* intro */}
-        <div className="text-4xl font-bold leading-normal xl:text-6xl">
-          آموزشی با کیفیت با اساتید برجسته در تمام حوزه‌های علوم کامپیوتر
+        <div>
+          <div className="text-4xl font-bold leading-normal xl:text-6xl">
+            آموزشی با کیفیت با اساتید برجسته
+            <br />
+          </div>
+          <div className="text-4xl font-bold leading-normal xl:text-6xl">
+            در تمام حوزه‌های علوم کامپیوتر
+          </div>
         </div>
+
         {/* lorem */}
         <div className="my-5 leading-loose">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده

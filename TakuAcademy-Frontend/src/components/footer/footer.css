@@ -1,0 +1,44 @@
+.bg-line {
+  background: url("../../assets/footer/line.png");
+}
+
+/* social media */
+.bg-youtube {
+  background: url("../../assets/footer/you.png");
+}
+.bg-link {
+  background: url("../../assets/footer/lnk.png");
+}
+.bg-telegram {
+  background: url("../../assets/footer/tel.png");
+}
+.bg-instagram {
+  background: url("../../assets/footer/ins.png");
+}
+
+/* misc */
+.bg-misc {
+  background: url("../../assets/footer/misc.png");
+}
+
+/* contact */
+.bg-phone {
+  background: url("../../assets/footer/phone.png");
+}
+.bg-mail {
+  background: url("../../assets/footer/mail.png");
+}
+.bg-location {
+  background: url("../../assets/footer/loaction.png");
+}
+
+/* namads */
+.bg-nashr {
+  background: url("../../assets/footer/nashr.png");
+}
+.bg-namad {
+  background: url("../../assets/footer/namad.png");
+}
+.bg-instagram {
+  background: url("../../assets/footer/samandehi.png");
+}

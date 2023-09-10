@@ -1,0 +1,9 @@
+/* gap between type of thecourse btns and texts  */
+.type-text-div {
+  gap: 11vw;
+}
+.filterSearchRounder {
+  border-radius: 20px;
+  border: 1px solid rgba(233, 246, 255, 0.5);
+  background: rgba(65, 53, 93, 0.2);
+}

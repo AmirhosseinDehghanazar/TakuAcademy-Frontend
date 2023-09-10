@@ -1,42 +1,69 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+}
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+/* Customize the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.bg-gradient {
+  background: linear-gradient(to left, #2a2a72, #0c8ce9);
+  transition: opacity 0.15s;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bg-gradient:hover {
+  opacity: 0.8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.bg-arrow {
+  margin-right: 5px;
+  width: 16px;
+  height: 10px;
+}
+.bg-arrow-w {
+  background: url("./assets/header/arrow.png");
 }
 
-.card {
-  padding: 2em;
+.arrow-btn:hover > .bg-arrow {
+  transform: translateX(-10px);
+  transition: transform 0.15s;
 }
 
-.read-the-docs {
-  color: #888;
+.bg-flash {
+  background: url("./assets/header/Vector5.png");
+  height: 6px;
+  width: 18px;
+}
+
+.bg-under {
+  background: url("./assets/question/qVector.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-img {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.mar-x {
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+}
+
+.thin-border {
+  border: solid 1px #798086;
+}
+
+/* this css goes for all icons in text */
+.bg-icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  background-color: #41355d;
 }

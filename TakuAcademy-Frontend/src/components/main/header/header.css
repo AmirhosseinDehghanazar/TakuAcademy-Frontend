@@ -1,0 +1,38 @@
+.background-props {
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  background-repeat: no-repeat;
+  transition: transform 0.15s;
+}
+
+.bg-arrow-b {
+  background: url("../../../assets/header/arrow-black.png");
+}
+
+.bg-underLine {
+  background: url("../../../assets/header/Vector.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-height: 8px;
+}
+
+.string {
+  font-family: "Peyda";
+}
+
+.floating-image {
+  /* position: absolute; */
+  animation: float 3s ease infinite; /* Customize animation duration and timing function */
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px); /* Adjust the floating height */
+  }
+}

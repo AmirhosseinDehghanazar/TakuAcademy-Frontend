@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import lady from "../../../assets/header/lady-on-pc.png";
 import "./header.css";
 import { CustomNumeralNumericFormat } from "../../numeric";
-
+import headerBigLine from "../../../assets/header/headerBigLine.svg";
 const Header = () => {
   // fake data to test
   const numbersData = [
@@ -61,15 +61,17 @@ const Header = () => {
       {/* second part:texts */}
       <div className="flex flex-col mar-x max-w-screen-sm xl:max-w-screen-lg">
         {/* first part of texts */}
-        <div className="flex gap-2 items-center text-start">
+        <div className="flex gap-2 items-center text-start lg:mb-7 mb:5">
           <div className="background-props bg-flash bg-slate-500"></div>
-          <p>آکادمی تاکو</p>
+          <p className="lg:text-25 text-lg">آکادمی تاکو</p>
         </div>
         {/* intro */}
         <div>
           <div className="text-4xl font-bold leading-normal xl:text-6xl">
             آموزشی با کیفیت با اساتید برجسته
-            <br />
+            <span className="hidden md:inline-block relative right-96 bottom-3">
+              <img src={headerBigLine} alt="" />
+            </span>
           </div>
           <div className="text-4xl font-bold leading-normal xl:text-6xl">
             در تمام حوزه‌های علوم کامپیوتر
@@ -103,8 +105,8 @@ const Header = () => {
         {/* React Number Format */}
         <div className="flex justify-center lg:justify-start gap-4 md:gap-16 lg:gap-7 my-6 items-center">
           {numbersData.map((data, index) => (
-            <div className="flex flex-col items-center" key={index}>
-              <span className="font-semibold lg:text-xl">
+            <div className="flex flex-col items-center " key={index}>
+              <span className="font-extrabold lg:text-xl">
                 <CustomNumeralNumericFormat value={counts[index]} />+
               </span>
               <div className="background-props bg-underLine"></div>

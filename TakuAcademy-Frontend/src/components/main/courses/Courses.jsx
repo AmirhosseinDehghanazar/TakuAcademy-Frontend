@@ -1,7 +1,7 @@
 import Buttons from "./Buttons";
 import "./courses.css";
 import data from "./cardsData";
-
+import Eclipse from "../../../assets/card/Eclipse.svg";
 import React, { useState } from "react";
 import Card from "./card/Card";
 
@@ -22,13 +22,19 @@ const Courses = () => {
   return (
     <div className="mar-x">
       {/* text & type of courses buttons */}
+
       <div className="flex flex-col justify-between xl:justify-around items-center type-text-div md:flex-row ">
         <div className="flex flex-col items-start ">
           <div className="flex justify-center items-center gap-2">
             <div className="bg-flash"></div>
+
             <p className="text-2xl">دوره‌های برگزیده آکادمی تاکو</p>
           </div>
-
+          <img
+            src={Eclipse}
+            alt=""
+            className="absolute hidden md:inline-block right-0  -z-10 "
+          />
           <p className="mt-5 text-md leading-relaxed">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
             استفاده از طراحان گرافیک است.

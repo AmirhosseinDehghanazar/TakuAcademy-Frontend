@@ -7,6 +7,7 @@ import hamburger from "../../assets/navbar/menu.png";
 import "./navbar.css";
 import Sidebar from "./sidebar/Sidebar";
 import Hamburger from "hamburger-react";
+import BubleColor from "../BubleColor/BubleColor";
 
 const Navbar = () => {
   // adding state for search icon: on click renders seachComponent
@@ -42,12 +43,11 @@ const Navbar = () => {
 
             <div>
               <a href="/">
-                <img width={88} className="lg:w-44" src={Logo} />
+                <img width={88} className="lg:w-44 lg:mr-20" src={Logo} />
               </a>
             </div>
           </div>
           {/* firstpart ends here */}
-
           {/* this component have links and is hidden until screen is large */}
           <div className="hidden lg:flex gap-8 xl:gap-11 2xl:gap-14 transition-all">
             <div>
@@ -84,8 +84,15 @@ const Navbar = () => {
               </a>
             </div>
           </div>
-          <div className="bubleSHape absolute left-0 transform -translate-x-1/2 w-60 h-60 bg-blue-500 "></div>
-
+          <BubleColor
+            position={{ top: 0, left: 0 }}
+            blur={240} // Dynamic blur value
+            borderRadius={473} // Dynamic border radius value
+            color={"#009FFD"} // Dynamic colored buble
+            zIndex={-50}
+            width={300}
+            height={300}
+          />
           {/* last part in nav which contains search and regiter/login */}
           <div className="flex items-center justify-center gap-4">
             <div className=" button-div  flex items-center justify-center ">

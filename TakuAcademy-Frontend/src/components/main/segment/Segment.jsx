@@ -1,12 +1,21 @@
 import React from "react";
 import "./segment.css";
-
+import BubleColor from "../../BubleColor/BubleColor";
 const Segment = () => {
   return (
     <div className="segment-parent xl:mx-12 2xl:mx-24">
+      <BubleColor
+        position={{ top: 650, left: 0, right: -120 }}
+        blur={230} // Dynamic blur value
+        borderRadius={473} // Dynamic border radius value
+        color={"#009FFD"} // Dynamic colored buble
+        zIndex={-1}
+        width={300}
+        height={400}
+      />
       <div className="mar-x mb-20 xl:mb-40 relative">
         {/* element below is the blue Rectangle over the over one */}
-        <div className="h-48 mb-16 thin-border rounded-lg bg-cusDarkBlue rounded-20">
+        <div className="h-60 mb-16 thin-border rounded-lg bg-cusDarkBlue sectionRounder">
           {/* this div contains texts and manage them the texts on top */}
           <div className="flex justify-between items-center  mx-3 md:mx-6">
             <div className="flex flex-col">
@@ -32,17 +41,18 @@ const Segment = () => {
           </div>
 
           {/* this div is parent for all Cubes */}
-          <div className="flex justify-center items-center lg:mt-6">
+          <div className="flex justify-center items-center lg:mt-7 ">
             {/* cube; map?*/}
-            <div className=" bg-cube font-semibold flex flex-col px-7 py-5 gap-2.5 rounded-md xl:px-9 xl:py-7">
-              <div className="bg-rocket bg-img w-12 h-8"></div>
+            <div className=" bg-cube font-semibold flex flex-col px-7 py-5 gap-2.5 rounded-md xl:px-9 xl:py-7 ">
+              <div className="bg-rocket bg-img w-16 h-10"></div>
               <div>جای متن </div>
             </div>
+
             {/* cube element end here */}
           </div>
         </div>
         {/* div to show bejind other one  */}
-        <div className="h-48 shy-div -rotate-2 rounded-lg"></div>
+        <div className="h-60 shy-div -rotate-2 sectionRounder"></div>
       </div>
     </div>
   );

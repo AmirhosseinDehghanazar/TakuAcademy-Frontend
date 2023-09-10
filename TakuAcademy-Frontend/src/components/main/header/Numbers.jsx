@@ -4,7 +4,7 @@ const Numbers = ({ number, subject }) => {
   return (
     <div>
       <div className="flex flex-col items-center">
-        <span className="font-semibold">
+        <span className="font-semibold ">
           <CustomNumeralNumericFormat value={number} />+
         </span>
         <div className="background-props bg-underLine"></div>

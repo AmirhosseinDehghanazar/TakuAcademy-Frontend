@@ -90,9 +90,3 @@ more than 95% of browers & main browers except useless IE */
 .link-hover:hover::before {
   width: 100%;
 }
-.bubleSHape {
-  top: -90px;
-  border-radius: 473px;
-  background: #009ffd;
-  filter: blur(300px);
-}

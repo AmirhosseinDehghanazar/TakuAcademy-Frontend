@@ -10,6 +10,9 @@ export default {
         cusBlack: "#232528",
         cusWhite: "#E9F6FF",
       },
+      fontSize: {
+        25: "25px",
+      },
     },
   },
   plugins: [],

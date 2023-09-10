@@ -33,8 +33,9 @@
 }
 
 .bg-flash {
+  background-repeat: no-repeat;
   background: url("./assets/header/Vector5.png");
-  height: 6px;
+  height: 8px;
   width: 18px;
 }
 
@@ -52,8 +53,8 @@
 }
 
 .mar-x {
-  margin-left: 7.5%;
-  margin-right: 7.5%;
+  margin-left: 5.5%;
+  margin-right: 5.5%;
 }
 
 .thin-border {

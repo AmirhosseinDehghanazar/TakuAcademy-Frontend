@@ -4,7 +4,7 @@ import "./footer.css";
 
 const Footer = () => {
   return (
-    <div className="mar-x">
+    <div className="mar-x ">
       {/* header */}
       <div className="flex justify-center items-center gap-1 mb-10">
         <img width={88} className="lg:w-44" src={logo} />

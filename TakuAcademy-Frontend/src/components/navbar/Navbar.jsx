@@ -84,6 +84,7 @@ const Navbar = () => {
               </a>
             </div>
           </div>
+          <div className="bubleSHape absolute left-0 transform -translate-x-1/2 w-60 h-60 bg-blue-500 "></div>
 
           {/* last part in nav which contains search and regiter/login */}
           <div className="flex items-center justify-center gap-4">

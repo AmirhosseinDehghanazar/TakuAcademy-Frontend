@@ -35,7 +35,7 @@ const Courses = () => {
           </p>
         </div>
 
-        <div className="max-w-xs md:max-w-md lg:max-w-lg py-2 px-2 h-16 whitespace-nowrap overflow-x-auto overflow-y-hidden gap-8 thin-border rounded-md">
+        <div className="max-w-xs md:max-w-md lg:max-w-lg py-2 px-2 h-16 whitespace-nowrap overflow-x-auto overflow-y-hidden gap-8 thin-border filterSearchRounder">
           {buttonsData.map((btn) => (
             <Buttons
               key={btn.index}

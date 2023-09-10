@@ -5,7 +5,7 @@ const Comment = () => {
   return (
     <div className="comment-parent flex flex-col lg:flex-row justify-center items-center">
       {/* what people say */}
-      <div className="flex flex-col gap-8 max-w-md lg:max-w-sm 2xl:max-w-xl">
+      <div className="flex flex-col justify-center items-center lg:items-start gap-8 max-w-md lg:max-w-sm 2xl:max-w-xl">
         <div className="flex flex-col gap-2">
           <div className="font-bold text-3xl ">
             کاربران درباره ما چه می‌گویند؟

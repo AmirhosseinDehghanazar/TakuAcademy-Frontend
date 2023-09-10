@@ -1,0 +1,13 @@
+.comment-parent {
+  gap: 7%;
+}
+
+.shy-div-comment {
+  background-color: #185a9c;
+  min-width: 105%;
+  position: absolute;
+  right: -2.5%;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}

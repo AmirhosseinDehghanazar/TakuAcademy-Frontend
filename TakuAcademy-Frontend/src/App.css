@@ -27,6 +27,13 @@
   width: 18px;
 }
 
+.bg-under {
+  background: url("./assets/question/qVector.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .bg-img {
   background-repeat: no-repeat;
   background-size: contain;

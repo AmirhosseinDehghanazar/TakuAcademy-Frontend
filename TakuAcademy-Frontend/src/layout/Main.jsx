@@ -4,6 +4,7 @@ import Header from "../components/main/header/header";
 import Segment from "../components/main/segment/Segment";
 import Courses from "../components/main/courses/Courses";
 import Question from "../components/main/question/Question";
+import Comment from "../components/main/comment/Comment";
 
 const Main = () => {
   return (
@@ -13,6 +14,7 @@ const Main = () => {
       <Segment />
       <Courses />
       <Question />
+      <Comment />
     </div>
   );
 };

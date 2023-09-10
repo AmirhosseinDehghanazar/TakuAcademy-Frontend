@@ -1,7 +1,9 @@
+/* gap between image and texts */
 .question-parent {
   gap: 9vw;
 }
 
+/* getting all images */
 .bg-dart {
   background: url("../../../assets/question/icon1.png");
 }
@@ -20,12 +22,8 @@
 .bg-chat {
   background: url("../../../assets/question/icon6.png");
 }
-.bg-under {
-  background: url("../../../assets/question/qVector.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
+
+/* this css goes for all icons in text */
 .bg-all {
   background-repeat: no-repeat;
   background-position: center;

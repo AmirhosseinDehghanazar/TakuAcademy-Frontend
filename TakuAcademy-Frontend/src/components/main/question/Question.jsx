@@ -53,7 +53,9 @@ const Question = () => {
             چون پشتیبان‌های ما همیشه پیگیر روند شما و راهنمایی شما هستن.
           </div>
         </div>
+        {/* reasons end here */}
       </div>
+      {/* whole text ends here */}
     </div>
   );
 };

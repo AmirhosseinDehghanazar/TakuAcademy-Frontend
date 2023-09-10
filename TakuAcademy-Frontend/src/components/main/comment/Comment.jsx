@@ -21,11 +21,11 @@ const Comment = () => {
           <div className="bg-arrow bg-arrow-w"></div>
         </button>
       </div>
-      {/* comments */}
+
       <div className="relative">
         {/* blueCube */}
         <div className="h-80 thin-border max-w-2xl p-5 rounded-lg bg-cusDarkBlue rounded-20">
-          {/* this div contains texts and manage them the texts on top */}
+          {/* place for comment */}
           <div className="flex justify-between items-center  mx-3 md:mx-6">
             <div className="flex flex-col">
               <div className="flex justify-between items-center">
@@ -40,6 +40,8 @@ const Comment = () => {
               </div>
             </div>
           </div>
+          {/* comment finish here */}
+
           {/* these two element below me are the two lightBlue divs behindcomment */}
           <div className="h-80 shy-div-comment -rotate-3 opacity-70 rounded-lg" />
           <div className="h-80 shy-div-comment -rotate-6 opacity-50 rounded-lg" />

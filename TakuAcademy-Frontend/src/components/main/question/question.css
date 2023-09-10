@@ -22,11 +22,3 @@
 .bg-chat {
   background: url("../../../assets/question/icon6.png");
 }
-
-/* this css goes for all icons in text */
-.bg-all {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
-  background-color: #41355d;
-}

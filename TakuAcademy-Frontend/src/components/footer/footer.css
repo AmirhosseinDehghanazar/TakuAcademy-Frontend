@@ -1,3 +1,9 @@
+.bg-line-mobile {
+  background: url("../../assets/footer/line-mobile.png");
+  width: 100%;
+  height: 1px;
+}
+/* remember: applied to last div (copyRight) */
 .bg-line {
   background: url("../../assets/footer/line.png");
 }
@@ -19,17 +25,25 @@
 /* misc */
 .bg-misc {
   background: url("../../assets/footer/misc.png");
+  width: 14px;
+  height: 12px;
 }
 
 /* contact */
 .bg-phone {
   background: url("../../assets/footer/phone.png");
+  width: 28px;
+  height: 21px;
 }
 .bg-mail {
   background: url("../../assets/footer/mail.png");
+  width: 28px;
+  height: 21px;
 }
 .bg-location {
   background: url("../../assets/footer/loaction.png");
+  width: 28px;
+  height: 21px;
 }
 
 /* namads */
@@ -39,6 +53,22 @@
 .bg-namad {
   background: url("../../assets/footer/namad.png");
 }
-.bg-instagram {
+.bg-saman {
   background: url("../../assets/footer/samandehi.png");
+}
+
+/* endline */
+.bg-line-end {
+  background: url("../../assets/footer/lineEnd.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 2px;
+}
+
+.bg-all-footer {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
 }

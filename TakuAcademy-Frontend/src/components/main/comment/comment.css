@@ -1,5 +1,6 @@
 .comment-parent {
-  gap: 7%;
+  gap: max(5rem, 7%);
+  margin: 80px 3%;
 }
 
 .shy-div-comment {

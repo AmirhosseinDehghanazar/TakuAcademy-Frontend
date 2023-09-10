@@ -3,9 +3,9 @@ import "./comment.css";
 
 const Comment = () => {
   return (
-    <div className="mar-x comment-parent flex flex-col lg:flex-row justify-center items-center">
+    <div className="comment-parent flex flex-col lg:flex-row justify-center items-center">
       {/* what people say */}
-      <div className="flex flex-col gap-8 max-w-md">
+      <div className="flex flex-col gap-8 max-w-md lg:max-w-sm 2xl:max-w-xl">
         <div className="flex flex-col gap-2">
           <div className="font-bold text-3xl ">
             کاربران درباره ما چه می‌گویند؟
@@ -23,9 +23,9 @@ const Comment = () => {
       </div>
       {/* comments */}
       <div className="relative mb-20">
-        {/* cubesParent */}
-        <div className="h-52 mb-16 thin-border rounded-lg bg-cusDarkBlue rounded-20">
-          {/* main blue cube */}
+        {/* blueCube */}
+        <div className="h-80 thin-border max-w-2xl rounded-lg bg-cusDarkBlue rounded-20">
+          {/* this div contains texts and manage them the texts on top */}
           <div className="flex justify-between items-center  mx-3 md:mx-6">
             <div className="flex flex-col">
               <div className="flex items-center gap-2 py-3">
@@ -39,20 +39,16 @@ const Comment = () => {
               </p>
             </div>
             {/* this bitch only shows up in tablet or higher screens as figma showed */}
-            <div className="hidden md:block">
-              <a href="#">
-                <button>
-                  مشاهده دوره‌ها
-                  <span className="background-props bg-arrow bg-arrow-w"></span>
-                </button>
-              </a>
-            </div>
+            <a href="#">
+              <button className="arrow-btn">
+                مشاهده دوره‌ها
+                <span className="background-props bg-arrow bg-arrow-w"></span>
+              </button>
+            </a>
           </div>
-          {/*  main blue cube ends here */}
-
           {/* these two element below me are the two lightBlue divs behindcomment */}
-          <div className="h-52 shy-div-comment -rotate-3 opacity-70 rounded-lg" />
-          <div className="h-52 shy-div-comment -rotate-6 opacity-50 rounded-lg" />
+          <div className="h-80 shy-div-comment -rotate-3 opacity-70 rounded-lg" />
+          <div className="h-80 shy-div-comment -rotate-6 opacity-50 rounded-lg" />
         </div>
       </div>
     </div>

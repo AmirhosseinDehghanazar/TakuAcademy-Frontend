@@ -9,7 +9,6 @@ Welcome to the Taku Academy Frontend project! This is the frontend part of our w
 - [Getting Started](#getting-started)
 - [Available Scripts](#available-scripts)
 - [Previewing](#previewing)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Project Structure
@@ -90,10 +89,6 @@ npm run build
 
 
 This will serve the production build of the application on [http://localhost:5000](http://localhost:5000).
-
-## Contributing
-
-If you would like to contribute to the project, please read our [Contributing Guidelines](CONTRIBUTING.md).
 
 ## License
 

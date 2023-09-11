@@ -5,6 +5,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Rating from "react-rating";
 import taha from "../../../assets/card/taha-khoshgele.png";
+import yellowStar from "../../../assets/comment/star-yellow.png";
+import star from "../../../assets/comment/star-empty.png";
 
 const Comment = () => {
   const sliderRef = useRef(null);
@@ -24,7 +26,7 @@ const Comment = () => {
       text: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد",
       name: "احمد ذوقی",
       role: "از خوبا",
-      rate: "3.1",
+      rate: "3",
     },
     {
       text: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد",
@@ -84,7 +86,12 @@ const Comment = () => {
                     </div>
                     {/* rating */}
                     <div>
-                      <Rating initialRating={comment.rate} readonly />
+                      <Rating
+                        emptySymbol={<img src={star} />}
+                        fullSymbol={<img src={yellowStar} />}
+                        initialRating={comment.rate}
+                        readonly
+                      />
                     </div>
                   </div>
                   {/* line */}

@@ -41,25 +41,25 @@ const Footer = () => {
             دسترسی سریع
           </p>
           {/* first one include two of them */}
-          <div className="flex flex-col light justify-start items-start gap-5 lg:gap-4 mb-10">
-            <div className="flex lg:flex-col justify-start gap-10 lg:gap-4 items-center">
-              <div className="flex justify-center gap-2 items-center">
+          <div className="flex flex-col light justify-start items-start gap-7 lg:gap-5 mb-10">
+            <div className="flex lg:flex-col justify-start gap-10 lg:gap-6 items-center">
+              <div className="flex w-20 justify-start gap-2 items-center">
                 <div className="bg-all-footer bg-misc" />
                 <p> مدرسین</p>
               </div>
-              <div className="flex justify-center  gap-2 items-center">
+              <div className="flex w-20 justify-start  gap-2 items-center">
                 <div className="bg-all-footer bg-misc" />
-                <p>دوره ها</p>
+                <p> دوره </p>
               </div>
             </div>
 
             {/* second one which has last two */}
-            <div className="flex lg:flex-col justify-start gap-10 lg:gap-4 items-center">
-              <div className="flex justify-center  gap-2 items-center">
+            <div className="flex lg:flex-col justify-start gap-10 lg:gap-6 items-center">
+              <div className="flex  w-20 justify-start  gap-2 items-center">
                 <div className="bg-all-footer bg-misc" />
                 <p> پشتیبانی</p>
               </div>
-              <div className="flex justify-center  gap-2 items-center">
+              <div className="flex gap-2 w-20 justify-start items-center">
                 <div className="bg-all-footer bg-misc" />
                 <p> درباره ما</p>
               </div>
@@ -72,7 +72,7 @@ const Footer = () => {
           <p className="text-xl font-semibold  mb-5 inline-block">
             ارتباط با ما
           </p>
-          <div className="flex light flex-col justify-center gap-4">
+          <div className="flex light flex-col justify-center gap-4 lg:gap-8">
             <div className="flex justify-start items-center  gap-1">
               <div className="bg-phone bg-all-footer " />
               <p>شماره تماس: ۰۲۱۹۱۰۹۴۷۸۷</p>

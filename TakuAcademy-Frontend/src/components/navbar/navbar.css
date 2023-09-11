@@ -1,11 +1,12 @@
 .navbar {
-  background-color: #2c1f4a;
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
   z-index: 1;
 }
 
 /* background image for side-bar-taggle */
 .bg-hamburger {
-  background: url("../../assets/navbar/menu.png");
+  background: url("../../assets/navbar/menu.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -90,9 +91,17 @@ more than 95% of browers & main browers except useless IE */
 .link-hover:hover::before {
   width: 100%;
 }
-.bubleSHape {
-  top: -90px;
-  border-radius: 473px;
-  background: #009ffd;
-  filter: blur(300px);
+.searchBar {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border: solid 0.5px #2d075e6e;
+  box-shadow: 5px 5px 5px rgba(132, 22, 221, 0.342);
+  color: black;
+}
+@media screen and (max-width: 550px) {
+  .searchBar {
+    background-color: rgb(255, 255, 255);
+    width: 170px;
+    margin-left: 5px;
+  }
 }

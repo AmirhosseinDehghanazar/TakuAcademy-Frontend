@@ -1,5 +1,18 @@
+.bg-line-mobile {
+  background: url("../../assets/footer/line-mobile.png");
+  width: 100%;
+  height: 1px;
+}
+
+@media screen and (min-width: 480px) {
+  .bg-line-mobile {
+    background: url("../../assets/footer/line.png");
+  }
+}
+
+/* remember: applied to last div (copyRight) */
 .bg-line {
-  background: url("../../assets/footer/line.png");
+  background: url("../../assets/footer/lineEnd.png");
 }
 
 /* social media */
@@ -19,26 +32,88 @@
 /* misc */
 .bg-misc {
   background: url("../../assets/footer/misc.png");
+  width: 14px;
+  height: 12px;
 }
 
 /* contact */
 .bg-phone {
   background: url("../../assets/footer/phone.png");
+  width: 28px;
+  height: 21px;
 }
 .bg-mail {
   background: url("../../assets/footer/mail.png");
+  width: 28px;
+  height: 21px;
 }
 .bg-location {
   background: url("../../assets/footer/loaction.png");
+  width: 28px;
+  height: 21px;
 }
 
 /* namads */
 .bg-nashr {
-  background: url("../../assets/footer/nashr.png");
+  background: url("../../assets/footer/nashr-sm.png");
 }
 .bg-namad {
-  background: url("../../assets/footer/namad.png");
+  background: url("../../assets/footer/namad-sm.png");
 }
-.bg-instagram {
-  background: url("../../assets/footer/samandehi.png");
+.bg-samandehi {
+  background: url("../../assets/footer/samandehi-sm.png");
+}
+
+.bg-ele {
+  background-color: #2a2a72;
+  border: 1px solid #8a90b8;
+  border-radius: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+@media scrren and (min-width: 1024px) {
+  .bg-nashr {
+    background: url("../../assets/footer/nashr.png");
+  }
+  .bg-namad {
+    background: url("../../assets/footer/namad.png");
+  }
+  .bg-samandehi {
+    background: url("../../assets/footer/samandehi.png");
+  }
+}
+
+/* endline */
+
+@media screen and (min-width: 768px) {
+  .copyRight-text {
+    min-width: 100ch;
+  }
+}
+
+.bg-line-end {
+  background: url("../../assets/footer/lineEnd-sm.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 2px;
+}
+@media screen and (min-width: 1024px) {
+  .bg-line-end {
+    background: url("../../assets/footer/lineEnd.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 2px;
+  }
+}
+
+.bg-all-footer {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
 }

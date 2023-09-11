@@ -1,0 +1,45 @@
+.buble {
+  transition: all 0.2s;
+  opacity: 50%;
+}
+
+@media screen and (max-width: 550px) {
+  .buble {
+    width: 50vw;
+    filter: blur(140px);
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .buble {
+    width: 47vw;
+    filter: blur(150px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .buble {
+    width: 40vw;
+    filter: blur(177px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .buble {
+    width: 34vw;
+    filter: blur(200px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .buble {
+    width: 30vw;
+    filter: blur(210px);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .buble {
+    width: 30vw;
+    filter: blur(240px);
+  }
+}

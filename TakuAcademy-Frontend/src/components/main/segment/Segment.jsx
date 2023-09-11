@@ -1,12 +1,11 @@
 import React from "react";
 import "./segment.css";
-
 const Segment = () => {
   return (
-    <div className="segment-parent xl:mx-12 2xl:mx-24">
+    <div className="segment-parent xl:mx-12 2xl:mx-24 animate-scaleUp">
       <div className="mar-x mb-20 xl:mb-40 relative">
         {/* element below is the blue Rectangle over the over one */}
-        <div className="h-48 mb-16 thin-border rounded-lg bg-cusDarkBlue rounded-20">
+        <div className="h-60 mb-16 thin-border rounded-lg bg-cusDarkBlue sectionRounder">
           {/* this div contains texts and manage them the texts on top */}
           <div className="flex justify-between items-center  mx-3 md:mx-6">
             <div className="flex flex-col">
@@ -32,17 +31,57 @@ const Segment = () => {
           </div>
 
           {/* this div is parent for all Cubes */}
-          <div className="flex justify-center items-center lg:mt-6">
+          <div className=" whitespace-nowrap text-center cube-manager mx-auto mt-8 lg:mt-12 xl:mt-0">
             {/* cube; map?*/}
-            <div className=" bg-cube font-semibold flex flex-col px-7 py-5 gap-2.5 rounded-md xl:px-9 xl:py-7">
-              <div className="bg-rocket bg-img w-12 h-8"></div>
-              <div>جای متن </div>
-            </div>
+            <a
+              href="#"
+              className=" bg-cube font-semibold px-7 py-6 rounded-md xl:px-14 xl:py-12 ms-10 me-10 advancedRounder lg:mt-6 "
+            >
+              <div className="bg-seg-medal bg-img  mb-3 w-16 h-10 xl:w-20 xl:h-14"></div>
+              <div>لورم اپسیوم</div>
+            </a>
+            <a
+              href="#"
+              className=" bg-cube font-semibold px-7 py-6 rounded-md xl:px-14 xl:py-12 me-10 advancedRounder"
+            >
+              <div className="bg-seg-college bg-img mb-3 w-16 h-10 xl:w-20 xl:h-14"></div>
+              <div>لورم اپسیوم</div>
+            </a>
+            <a
+              href="#"
+              className=" bg-cube font-semibold px-7 py-6 rounded-md xl:px-14 xl:py-12 me-10 advancedRounder"
+            >
+              <div className="bg-seg-rocket bg-img  mb-3 w-16 h-10 xl:w-20 xl:h-14"></div>
+              <div>لورم اپسیوم</div>
+            </a>
+            <a
+              href="#"
+              className=" bg-cube font-semibold px-7 py-6 rounded-md xl:px-14 xl:py-12 me-10 advancedRounder"
+            >
+              <div className="bg-seg-dart bg-img mb-3 w-16 h-10 xl:w-20 xl:h-14"></div>
+              <div>لورم اپسیوم</div>
+            </a>
+            <a
+              href="#"
+              className=" bg-cube font-semibold px-7 py-6 rounded-md xl:px-14 xl:py-12 me-10 advancedRounder"
+            >
+              <div className="bg-seg-code bg-img mb-3 w-16 h-10 xl:w-20 xl:h-14"></div>
+              <div>لورم اپسیوم</div>
+            </a>
+            <a
+              href="#"
+              className=" bg-cube font-semibold px-7 py-6 rounded-md xl:px-14 xl:py-12 me-10 advancedRounder"
+            >
+              <div className="bg-seg-mind bg-img mb-3 w-16 h-10 xl:w-20 xl:h-14"></div>
+              <div>لورم اپسیوم</div>
+            </a>
+            {/* cubes end here */}
+
             {/* cube element end here */}
           </div>
         </div>
         {/* div to show bejind other one  */}
-        <div className="h-48 shy-div -rotate-2 rounded-lg"></div>
+        <div className="h-60 shy-div -rotate-2 sectionRounder"></div>
       </div>
     </div>
   );

@@ -2,6 +2,7 @@
 .bg-card {
   background-color: #371d74;
   min-width: 294px;
+  max-width: 500px;
 }
 /* css for type of the course in card: "فرانت اند" */
 .bg-type {

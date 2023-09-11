@@ -10,7 +10,7 @@ function App() {
     // Simulate an API call or other asynchronous operation
     setTimeout(() => {
       setIsLoading(false);
-    }, 3000); // Simulated 3-second delay
+    }, 2000); // Simulated 3-second delay
   }, []);
 
   return (

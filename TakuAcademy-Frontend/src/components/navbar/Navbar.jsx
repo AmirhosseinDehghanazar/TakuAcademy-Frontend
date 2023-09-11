@@ -93,7 +93,7 @@ const Navbar = () => {
                   <input
                     type="text"
                     placeholder="جست و جو..."
-                    className="searchBar absolute w-22 h-10 lg:w-52 lg:ml-10 lg:top-0 left-0 top-0 lg:w-44 px-2 py-1 rounded-md"
+                    className="searchBar absolute w-22 h-10 lg:w-52 lg:ml-10 lg:top-0 left-0 px-2 py-1 rounded-md top-0"
                   />
                   {/* Additional search UI elements */}
                 </div>

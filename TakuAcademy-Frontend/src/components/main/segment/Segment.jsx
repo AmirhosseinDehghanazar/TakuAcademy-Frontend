@@ -35,42 +35,42 @@ const Segment = () => {
             {/* cube; map?*/}
             <a
               href="#"
-              className=" bg-cube font-semibold px-7 py-6 rounded-md xl:px-14 xl:py-12 ms-10 me-10"
+              className=" bg-cube font-semibold px-7 py-6 rounded-md xl:px-14 xl:py-12 ms-10 me-10 advancedRounder lg:mt-6 "
             >
               <div className="bg-seg-medal bg-img  mb-3 w-16 h-10 xl:w-20 xl:h-14"></div>
               <div>لورم اپسیوم</div>
             </a>
             <a
               href="#"
-              className=" bg-cube font-semibold px-7 py-6 rounded-md xl:px-14 xl:py-12 me-10"
+              className=" bg-cube font-semibold px-7 py-6 rounded-md xl:px-14 xl:py-12 me-10 advancedRounder"
             >
               <div className="bg-seg-college bg-img mb-3 w-16 h-10 xl:w-20 xl:h-14"></div>
               <div>لورم اپسیوم</div>
             </a>
             <a
               href="#"
-              className=" bg-cube font-semibold px-7 py-6 rounded-md xl:px-14 xl:py-12 me-10"
+              className=" bg-cube font-semibold px-7 py-6 rounded-md xl:px-14 xl:py-12 me-10 advancedRounder"
             >
               <div className="bg-seg-rocket bg-img  mb-3 w-16 h-10 xl:w-20 xl:h-14"></div>
               <div>لورم اپسیوم</div>
             </a>
             <a
               href="#"
-              className=" bg-cube font-semibold px-7 py-6 rounded-md xl:px-14 xl:py-12 me-10"
+              className=" bg-cube font-semibold px-7 py-6 rounded-md xl:px-14 xl:py-12 me-10 advancedRounder"
             >
               <div className="bg-seg-dart bg-img mb-3 w-16 h-10 xl:w-20 xl:h-14"></div>
               <div>لورم اپسیوم</div>
             </a>
             <a
               href="#"
-              className=" bg-cube font-semibold px-7 py-6 rounded-md xl:px-14 xl:py-12 me-10"
+              className=" bg-cube font-semibold px-7 py-6 rounded-md xl:px-14 xl:py-12 me-10 advancedRounder"
             >
               <div className="bg-seg-code bg-img mb-3 w-16 h-10 xl:w-20 xl:h-14"></div>
               <div>لورم اپسیوم</div>
             </a>
             <a
               href="#"
-              className=" bg-cube font-semibold px-7 py-6 rounded-md xl:px-14 xl:py-12 me-10"
+              className=" bg-cube font-semibold px-7 py-6 rounded-md xl:px-14 xl:py-12 me-10 advancedRounder"
             >
               <div className="bg-seg-mind bg-img mb-3 w-16 h-10 xl:w-20 xl:h-14"></div>
               <div>لورم اپسیوم</div>

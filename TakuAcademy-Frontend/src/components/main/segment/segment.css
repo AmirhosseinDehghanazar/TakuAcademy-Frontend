@@ -24,26 +24,29 @@
 
 /* backgrounds */
 .bg-seg-medal {
-  background: url("../../../assets/segment/medal.png");
+  background: url("../../../assets/segment/medal.svg");
   background-repeat: no-repeat;
 }
 .bg-seg-college {
-  background: url("../../../assets/segment/college.png");
+  background: url("../../../assets/segment/college.svg");
   background-repeat: no-repeat;
 }
 .bg-seg-rocket {
-  background: url("../../../assets/segment/rocket.png");
+  background: url("../../../assets/segment/rocket.svg");
   background-repeat: no-repeat;
 }
 .bg-seg-dart {
-  background: url("../../../assets/segment/dart.png");
+  background: url("../../../assets/segment/dart.svg");
   background-repeat: no-repeat;
 }
 .bg-seg-code {
-  background: url("../../../assets/segment/code.png");
+  background: url("../../../assets/segment/code.svg");
   background-repeat: no-repeat;
 }
 .bg-seg-mind {
-  background: url("../../../assets/segment/mind.png");
+  background: url("../../../assets/segment/mind.svg");
   background-repeat: no-repeat;
+}
+.advancedRounder {
+  border-radius: 18px;
 }

@@ -9,8 +9,8 @@ import Sidebar from "./sidebar/Sidebar";
 import Hamburger from "hamburger-react";
 
 const Navbar = () => {
-  // adding state for search icon: on click renders seachComponent
-  const [search, setSearch] = useState(false);
+  // adding state for search icon: on click renders searchComponent
+  const [searchOpen, setSearchOpen] = useState(false);
   // state for sidebar menu for small breakpoints like phone
   const [sidebar, setSidebar] = useState(false);
 
@@ -20,19 +20,19 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="lg:hidden ">
+      <div className="lg:hidden">
         <Sidebar sidebar={sidebar} closeSidebar={closeSidebar} />
       </div>
 
       <div className="fade-in lg:mt-8">
         {/* parent */}
         <div className="flex py-3 mb-3 navbar md:relative w-full justify-around gap-5 sm:gap-32 md:gap-60 lg:gap-16 xl:gap-36 transition-all items-center">
-          {/* firat part of nav includes: menue & logo */}
+          {/* firat part of nav includes: menu & logo */}
           <div className="flex items-center justify-center gap-4">
             <div className="flex items-center justify-center search-div sidebar_taggle lg:hidden">
               {/* button to open sidebar */}
               <button
-                className="sidebar-btn "
+                className="sidebar-btn"
                 onClick={() => setSidebar((prev) => !prev)}
                 type="button"
               >
@@ -46,7 +46,7 @@ const Navbar = () => {
               </a>
             </div>
           </div>
-          {/* firstpart ends here */}
+          {/* first part ends here */}
           {/* this component have links and is hidden until screen is large */}
           <div className="hidden lg:flex gap-8 xl:gap-11 2xl:gap-14 transition-all">
             <div>
@@ -84,15 +84,26 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* last part in nav which contains search and regiter/login */}
+          {/* last part in nav which contains search and register/login */}
           <div className="flex items-center justify-center gap-4">
             <div className=" button-div  flex items-center justify-center ">
-              {/* button to show searchBar */}
-              <button onClick={() => setSearch((prev) => !prev)}>
+              {/* button to show search bar */}
+              {searchOpen && (
+                <div className="absolute p-4 rounded-lg ml-14 fade-in ">
+                  <input
+                    type="text"
+                    placeholder="جست و جو..."
+                    className="searchBar absolute w-22 h-10 lg:w-52 lg:ml-10 lg:top-0 left-0 top-0 lg:w-44 px-2 py-1 rounded-md"
+                  />
+                  {/* Additional search UI elements */}
+                </div>
+              )}
+              <button onClick={() => setSearchOpen((prev) => !prev)}>
                 <img
                   width={18}
                   src={searchIcon}
-                  className=" pointer-events-none"
+                  className=" pointer-events-none fade-in"
+                  alt="Search Icon"
                 />
               </button>
             </div>
@@ -102,14 +113,19 @@ const Navbar = () => {
                 type="button"
                 className="flex justify-center items-center px-3 py-3 md:px-5 md:py-3 gap-2"
               >
-                <img width={18} src={face} className=" pointer-events-none" />
+                <img
+                  width={18}
+                  src={face}
+                  className=" pointer-events-none"
+                  alt="Face Icon"
+                />
                 <p className="hidden md:block"> حساب کاربری</p>
               </button>
             </div>
           </div>
           {/* last part ends here */}
         </div>
-        <div></div>
+        {/* Search component */}
       </div>
     </>
   );

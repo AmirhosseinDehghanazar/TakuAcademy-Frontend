@@ -18,12 +18,12 @@ const Footer = () => {
       </div>
 
       {/* information */}
-      <div className="flex  flex-col lg:flex-row justify-between">
+      <div className="flex  flex-col lg:flex-row justify-between lg:gap-10 2xl:gap-0">
         <div className="mb-10 max-w-sm">
           <div className="text-xl font-semibold mb-3 inline-block">
             درباره آکادمی تاکو
           </div>
-          <p className="mb-4 lighter">
+          <p className="mb-4 light">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
             استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
             ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
@@ -39,8 +39,8 @@ const Footer = () => {
         <div>
           <p className="text-xl font-semibold mb-8 inline-block">دسترسی سریع</p>
           {/* first one include two of them */}
-          <div className="flex flex-col lighter  justify-start items-start gap-5 lg:gap-2 mb-10">
-            <div className="flex lg:flex-coljustify-start gap-10 lg:gap-2 items-center">
+          <div className="flex flex-col light justify-start items-start gap-5 lg:gap-4 mb-10">
+            <div className="flex lg:flex-col justify-start gap-10 lg:gap-4 items-center">
               <div className="flex justify-center gap-2 items-center">
                 <div className="bg-all-footer bg-misc" />
                 <p> مدرسین</p>
@@ -52,7 +52,7 @@ const Footer = () => {
             </div>
 
             {/* second one which has last two */}
-            <div className="flex lg:flex-col justify-start gap-10 lg:gap-2 items-center">
+            <div className="flex lg:flex-col justify-start gap-10 lg:gap-4 items-center">
               <div className="flex justify-center  gap-2 items-center">
                 <div className="bg-all-footer bg-misc" />
                 <p> پشتیبانی</p>
@@ -70,7 +70,7 @@ const Footer = () => {
           <p className="text-xl font-semibold  inline-block mb-5">
             ارتباط با ما
           </p>
-          <div className=" lighter flex flex-col justify-center gap-4">
+          <div className="flex light flex-col justify-center gap-4">
             <div className="flex justify-start items-center  gap-1">
               <div className="bg-phone bg-all-footer " />
               <p>شماره تماس: ۰۲۱۹۱۰۹۴۷۸۷</p>
@@ -101,7 +101,7 @@ const Footer = () => {
       </div>
       {/* copyRight */}
       <div className="flex flex-col justify-center items-center lg:flex-row gap-3 mb-3">
-        <p className="text-xs light text-center">
+        <p className="text-xs text-center light copyRight-text">
           کليه حقوق محصولات و محتوای اين سایت متعلق به آکادمی تاکو می باشد و هر
           گونه کپی برداری از محتوا و محصولات سایت غیر مجاز است و پیگرد قانونی
           دارد

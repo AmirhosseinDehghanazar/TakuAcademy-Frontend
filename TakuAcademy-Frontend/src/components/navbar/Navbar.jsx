@@ -110,15 +110,17 @@ const Navbar = () => {
           </div>
           {/* last part ends here */}
         </div>
-        <BubleColor
-          position={{ top: 0, left: 0 }}
-          blur={240} // Dynamic blur value
-          borderRadius={0} // Dynamic border radius value
-          color={"#009FFD"} // Dynamic colored buble
-          zIndex={-1}
-          width={300}
-          height={300}
-        />
+        <div>
+          <BubleColor
+            position={{ top: 0, left: 0 }}
+            blur={240} // Dynamic blur value
+            borderRadius={0} // Dynamic border radius value
+            color={"#009FFD"} // Dynamic colored buble
+            zIndex={-10}
+            width={300}
+            height={300}
+          />
+        </div>
       </div>
     </>
   );

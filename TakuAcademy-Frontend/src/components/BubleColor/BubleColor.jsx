@@ -9,16 +9,17 @@ const BubleColor = ({
   width,
   height,
   zIndex,
+  translateX,
 }) => {
   // Calculate dynamic styles based on props
   const dynamicStyles = {
     top: position.top || 0,
     left: position.left || 0,
     right: position.right,
-    // filter: `blur(${blur || 0}px)`,
+    // filter: `blur(${blur || 0}px)`, blur change based on breakpoints in bubble.css
     borderRadius: `${borderRadius || 0}px`,
     backgroundColor: `${color || "white"}`,
-    // width: `${width || 0}px"}`,
+    // width: `${width || 0}px"}`, width changes based on breakpoints in bubble.css
     height: `${height || 0}px`,
     zIndex: zIndex,
   };

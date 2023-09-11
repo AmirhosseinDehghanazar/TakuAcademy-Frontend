@@ -9,6 +9,11 @@
 ::-webkit-scrollbar-thumb {
   background-color: #888;
 }
+
+.main-page {
+  max-width: 100vw;
+  overflow: hidden;
+}
 .bg-gradient {
   background: linear-gradient(to left, #2a2a72, #0c8ce9);
   transition: opacity 0.15s;

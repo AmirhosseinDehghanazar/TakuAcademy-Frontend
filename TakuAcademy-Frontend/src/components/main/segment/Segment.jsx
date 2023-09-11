@@ -1,18 +1,8 @@
 import React from "react";
 import "./segment.css";
-import BubleColor from "../../BubleColor/BubleColor";
 const Segment = () => {
   return (
     <div className="segment-parent xl:mx-12 2xl:mx-24">
-      {/* <BubleColor
-        position={{ top: 650, left: 0, right: -120 }}
-        blur={230} // Dynamic blur value
-        borderRadius={473} // Dynamic border radius value
-        color={"#009FFD"} // Dynamic colored buble
-        zIndex={-1}
-        width={30}
-        height={400}
-      /> */}
       <div className="mar-x mb-20 xl:mb-40 relative">
         {/* element below is the blue Rectangle over the over one */}
         <div className="h-60 mb-16 thin-border rounded-lg bg-cusDarkBlue sectionRounder">

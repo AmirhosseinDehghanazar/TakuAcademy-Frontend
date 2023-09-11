@@ -7,7 +7,6 @@ import hamburger from "../../assets/navbar/menu.png";
 import "./navbar.css";
 import Sidebar from "./sidebar/Sidebar";
 import Hamburger from "hamburger-react";
-import BubleColor from "../BubleColor/BubleColor";
 
 const Navbar = () => {
   // adding state for search icon: on click renders seachComponent
@@ -110,17 +109,7 @@ const Navbar = () => {
           </div>
           {/* last part ends here */}
         </div>
-        <div>
-          {/* <BubleColor
-            position={{ top: 0, left: 0 }}
-            blur={240} // Dynamic blur value
-            borderRadius={0} // Dynamic border radius value
-            color={"#009FFD"} // Dynamic colored buble
-            zIndex={-10}
-            width={300}
-            height={300}
-          /> */}
-        </div>
+        <div></div>
       </div>
     </>
   );

@@ -7,7 +7,6 @@ import hamburger from "../../assets/navbar/menu.png";
 import "./navbar.css";
 import Sidebar from "./sidebar/Sidebar";
 import Hamburger from "hamburger-react";
-import BubleColor from "../BubleColor/BubleColor";
 
 const Navbar = () => {
   // adding state for search icon: on click renders seachComponent

@@ -16,10 +16,8 @@ const BubleColor = ({
     top: position.top || 0,
     left: position.left || 0,
     right: position.right,
-    // filter: `blur(${blur || 0}px)`, blur change based on breakpoints in bubble.css
     borderRadius: `${borderRadius || 0}px`,
     backgroundColor: `${color || "white"}`,
-    // width: `${width || 0}px"}`, width changes based on breakpoints in bubble.css
     height: `${height || 0}px`,
     zIndex: zIndex,
   };

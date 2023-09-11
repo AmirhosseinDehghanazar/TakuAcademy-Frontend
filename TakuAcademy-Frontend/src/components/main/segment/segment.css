@@ -7,16 +7,43 @@
   width: 100%;
   z-index: -1;
 }
+.cube-manager {
+  max-width: 80vw;
 
-.bg-rocket {
-  background-repeat: no-repeat;
-  background: url("../../../assets/segment/rocket.png");
+  overflow: auto;
 }
+
 .bg-cube {
-  align-items: center;
   background-color: #add8e6;
   color: #1e1e1e;
+  display: inline-block;
 }
 .sectionRounder {
   border-radius: 20px;
+}
+
+/* backgrounds */
+.bg-seg-medal {
+  background: url("../../../assets/segment/medal.png");
+  background-repeat: no-repeat;
+}
+.bg-seg-college {
+  background: url("../../../assets/segment/college.png");
+  background-repeat: no-repeat;
+}
+.bg-seg-rocket {
+  background: url("../../../assets/segment/rocket.png");
+  background-repeat: no-repeat;
+}
+.bg-seg-dart {
+  background: url("../../../assets/segment/dart.png");
+  background-repeat: no-repeat;
+}
+.bg-seg-code {
+  background: url("../../../assets/segment/code.png");
+  background-repeat: no-repeat;
+}
+.bg-seg-mind {
+  background: url("../../../assets/segment/mind.png");
+  background-repeat: no-repeat;
 }

@@ -33,7 +33,7 @@ const Courses = () => {
           <img
             src={Eclipse}
             alt=""
-            className="absolute hidden md:inline-block right-0  -z-10 "
+            className="absolute hidden md:inline-block right-0 pointer-events-none -z-10 "
           />
           <p className="mt-5 text-md leading-relaxed">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با

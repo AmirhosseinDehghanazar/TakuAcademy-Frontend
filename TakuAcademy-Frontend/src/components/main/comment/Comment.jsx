@@ -3,58 +3,42 @@ import "./comment.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Rating from "react-rating";
+import taha from "../../../assets/card/taha-khoshgele.png";
+import yellowStar from "../../../assets/comment/star-yellow.png";
+import star from "../../../assets/comment/star-empty.png";
 
 const Comment = () => {
   const sliderRef = useRef(null);
 
   const settings = {
     dots: false,
+    autoPlay: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: false,
   };
 
   const comments = [
     {
-      text: "With the help of this collection and professional leaders, I was able to reach the best possible level of preparation to participate in the TOEFL exam, and I am very grateful to them. - John Doe, Designer",
-      name: "John Doe",
-      role: "Designer",
+      text: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد",
+      name: "احمد ذوقی",
+      role: "از خوبا",
+      rate: "3",
     },
     {
-      text: "This collection is a game-changer! It provided me with invaluable resources and support to excel in my TOEFL exam. - Jane Smith, Engineer",
-      name: "Jane Smith",
-      role: "Engineer",
+      text: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد",
+      name: "آقا رضا",
+      role: "دیزاینر",
+      rate: "4",
     },
     {
-      text: "I highly recommend this collection to anyone preparing for the TOEFL. The quality of materials and guidance is unmatched. - Michael Johnson, Student",
-      name: "Michael Johnson",
-      role: "Student",
-    },
-    {
-      text: "The TOEFL exam was a breeze for me thanks to this amazing collection. I owe my success to the dedicated team behind it. - Sarah Williams, Teacher",
-      name: "Sarah Williams",
-      role: "Teacher",
-    },
-    {
-      text: "I couldn't have asked for better TOEFL preparation. This collection is a treasure trove of knowledge. - David Lee, IT Professional",
-      name: "David Lee",
-      role: "IT Professional",
-    },
-    {
-      text: "Kudos to the creators of this collection! It made a significant difference in my TOEFL scores. - Emily Davis, Writer",
-      name: "Emily Davis",
-      role: "Writer",
-    },
-    {
-      text: "This collection is a must-have for TOEFL aspirants. It's like having a personal tutor guiding you to success. - Mark Johnson, Researcher",
-      name: "Mark Johnson",
-      role: "Researcher",
-    },
-    {
-      text: "I'm amazed by how effective this collection is. It gave me the confidence to ace the TOEFL exam. - Jessica White, Nurse",
-      name: "Jessica White",
-      role: "Nurse",
+      text: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد",
+      name: "طاها جوووون",
+      role: "فرانت اند",
+      rate: "5",
     },
   ];
 
@@ -68,7 +52,7 @@ const Comment = () => {
           </div>
           <div className="bg-under ms-4 bg-under w-72 h-4"></div>
         </div>
-        <div>
+        <div className="light">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
           از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون.
         </div>
@@ -78,33 +62,62 @@ const Comment = () => {
         </button>
       </div>
 
-      <div className="relative">
+      <div className="relative box">
         {/* blueCube */}
-        <div className="h-80 thin-border max-w-2xl p-5 rounded-lg bg-cusDarkBlue rounded-20">
+        <div className="h-80 thin-border  p-5 rounded-lg bg-cusDarkBlue rounded-20">
           {/* place for comment */}
-          <div className="text-center bg-transparent h-72 comment-sp-width rounded-md relative bg-white p-4 comment-rounder">
-            <Slider {...settings} ref={sliderRef}>
-              {comments.map((comment, index) => (
-                <div key={index}>
-                  <div>{comment.name}</div>
+          <div className="h-80  overflow-auto rounded-md relative ">
+            <Slider className="slider" rtl {...settings} ref={sliderRef}>
+              {comments.map((comment, i) => (
+                <div key={i} className="comment-container h-56 overflow-auto">
+                  <div className="flex justify-between items-center mb-3">
+                    {/* commenter detail + rating */}
+                    <div className="flex gap-2 justify-start items-center">
+                      <img
+                        className="w-10 md:w-12 lg:w-14 xl:w-16"
+                        src={taha}
+                      />
+                      <div className="flex flex-col gap-1">
+                        <p>{comment.name}</p>
+                        <p className="text-sm text-gray-300/90">
+                          {comment.role}{" "}
+                        </p>
+                      </div>
+                    </div>
+                    {/* rating */}
+                    <div>
+                      <Rating
+                        emptySymbol={<img src={star} />}
+                        fullSymbol={<img src={yellowStar} />}
+                        initialRating={comment.rate}
+                        readonly
+                      />
+                    </div>
+                  </div>
+                  {/* line */}
+                  <div className="line-comment" />
+                  {/* text */}
+                  <div className="leading-loose mx-auto mt-5 overflow-auto">
+                    {comment.text}
+                  </div>
                 </div>
               ))}
             </Slider>
 
             {/* buttons */}
-            <div className="absolute rounded-lg px-2 bottom-10 right-5">
+            <div className="absolute rounded-lg px-2 bottom-14 left-0">
               <div>
                 <button
                   className=""
                   onClick={() => sliderRef.current.slickPrev()}
                 >
-                  <div className="arrow-right arrow" />
+                  <div className="arrow-right flash" />
                 </button>
                 <button
                   className=""
                   onClick={() => sliderRef.current.slickNext()}
                 >
-                  <div className="arrow-left arrow" />
+                  <div className="arrow-left flash" />
                 </button>
               </div>
             </div>

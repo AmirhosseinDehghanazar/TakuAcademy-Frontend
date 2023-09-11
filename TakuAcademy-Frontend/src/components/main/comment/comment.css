@@ -4,7 +4,7 @@
 .arrow-left {
   background: url("../../../assets/comment/left-arrow.png");
 }
-.arrow {
+.flash {
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
@@ -25,4 +25,18 @@
   top: 0;
   width: 100%;
   z-index: -1;
+}
+
+/* comment */
+.box {
+  width: max(300px, 70vw);
+  max-width: 700px;
+}
+.comment-container {
+  direction: rtl;
+}
+.line-comment {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(212, 212, 212, 0.199);
 }

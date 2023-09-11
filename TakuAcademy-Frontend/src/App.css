@@ -72,3 +72,11 @@
   background-size: auto;
   background-color: #41355d;
 }
+
+/* texts  */
+.light {
+  color: #cacaca;
+}
+.lighter {
+  color: #c0c0c0;
+}

@@ -30,3 +30,13 @@
   background-size: auto;
   background-color: #41355d;
 }
+
+.test {
+  color: #fff;
+  text-align: right;
+  font-family: Peyda;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 181%; /* 108.6px */
+}

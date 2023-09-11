@@ -55,13 +55,34 @@
 
 /* namads */
 .bg-nashr {
-  background: url("../../assets/footer/nashr.png");
+  background: url("../../assets/footer/nashr-sm.png");
 }
 .bg-namad {
-  background: url("../../assets/footer/namad.png");
+  background: url("../../assets/footer/namad-sm.png");
 }
-.bg-saman {
-  background: url("../../assets/footer/samandehi.png");
+.bg-samandehi {
+  background: url("../../assets/footer/samandehi-sm.png");
+}
+
+.bg-ele {
+  background-color: #2a2a72;
+  border: 1px solid #8a90b8;
+  border-radius: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+@media scrren and (min-width: 1024px) {
+  .bg-nashr {
+    background: url("../../assets/footer/nashr.png");
+  }
+  .bg-namad {
+    background: url("../../assets/footer/namad.png");
+  }
+  .bg-samandehi {
+    background: url("../../assets/footer/samandehi.png");
+  }
 }
 
 /* endline */
@@ -78,4 +99,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
+}
+
+/* texts */
+.cus-text {
+  color: #e9f6ff;
+  text-align: right;
+  font-family: Peyda;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 182.5%; /* 36.5px */
 }

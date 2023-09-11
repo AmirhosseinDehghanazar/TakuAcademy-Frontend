@@ -81,7 +81,7 @@ const Footer = () => {
               <div className="bg-mail bg-all-footer" />
               <p>ایمیل: info@takuacademy.com</p>
             </div>
-            <div className="flex justify-start items-center  gap-2 ">
+            <div className="flex justify-start items-start  gap-2 ">
               <div className="bg-location bg-all-footer" />
               <p className="w-52">
                 آدرس: خیابان نوفل لوشاتو. جنب کوچه یاسمن. پلاک ۷۲. مرکز نوآوری

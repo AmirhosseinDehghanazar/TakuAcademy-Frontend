@@ -111,7 +111,7 @@ const Navbar = () => {
           {/* last part ends here */}
         </div>
         <div>
-          <BubleColor
+          {/* <BubleColor
             position={{ top: 0, left: 0 }}
             blur={240} // Dynamic blur value
             borderRadius={0} // Dynamic border radius value
@@ -119,7 +119,7 @@ const Navbar = () => {
             zIndex={-10}
             width={300}
             height={300}
-          />
+          /> */}
         </div>
       </div>
     </>

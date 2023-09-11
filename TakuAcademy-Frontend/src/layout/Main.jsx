@@ -32,6 +32,7 @@ const Main = () => {
           {buble.map((b, i) =>
             i % 2 !== 0 ? (
               <BubleColor
+                key={i}
                 position={{ top: i * 600, right: b.num }}
                 blur={240} // Dynamic blur value
                 borderRadius={0} // Dynamic border radius value
@@ -42,6 +43,7 @@ const Main = () => {
               />
             ) : (
               <BubleColor
+                key={i}
                 position={{ top: i * 600, left: b.num }}
                 blur={240} // Dynamic blur value
                 borderRadius={0} // Dynamic border radius value

@@ -5,7 +5,7 @@ import "./card.css";
 
 const Card = ({ course }) => {
   return (
-    <div className="bg-card mx-auto max-w-sm thin-border rounded-xl  overflow-hidden shadow-lg">
+    <div className="card bg-card mx-auto thin-border rounded-xl overflow-hidden shadow-lg">
       {/* course thumbnail */}
       <img className="w-full" src={course.img} alt="Sunset in the mountains" />
       <div className="px-6 py-4 card-body">

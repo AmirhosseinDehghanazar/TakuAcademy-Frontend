@@ -56,7 +56,7 @@ const Courses = () => {
       </div>
 
       {/* courses */}
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:mar-x gap-4 2xl:gap-x-0 pt-10">
+      <div className="grid 2xl:mx-20 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 2xl:gap-x-0 pt-10">
         {data.map((course, i) => (
           <Card key={i} course={course} />
         ))}

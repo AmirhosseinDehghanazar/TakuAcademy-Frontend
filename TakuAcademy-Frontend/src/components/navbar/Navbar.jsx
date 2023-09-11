@@ -27,7 +27,7 @@ const Navbar = () => {
 
       <div>
         {/* parent */}
-        <div className="flex py-3 mb-12 navbar fixed md:relative w-full justify-around gap-5 sm:gap-32 md:gap-60 lg:gap-16 xl:gap-36 transition-all items-center navbar">
+        <div className="flex py-3 mb-3 navbar md:relative w-full justify-around gap-5 sm:gap-32 md:gap-60 lg:gap-16 xl:gap-36 transition-all items-center">
           {/* firat part of nav includes: menue & logo */}
           <div className="flex items-center justify-center gap-4">
             <div className="flex items-center justify-center search-div sidebar_taggle lg:hidden">
@@ -84,15 +84,7 @@ const Navbar = () => {
               </a>
             </div>
           </div>
-          <BubleColor
-            position={{ top: 0, left: 0 }}
-            blur={240} // Dynamic blur value
-            borderRadius={473} // Dynamic border radius value
-            color={"#009FFD"} // Dynamic colored buble
-            zIndex={-50}
-            width={300}
-            height={300}
-          />
+
           {/* last part in nav which contains search and regiter/login */}
           <div className="flex items-center justify-center gap-4">
             <div className=" button-div  flex items-center justify-center ">
@@ -118,6 +110,15 @@ const Navbar = () => {
           </div>
           {/* last part ends here */}
         </div>
+        <BubleColor
+          position={{ top: 0, left: 0 }}
+          blur={240} // Dynamic blur value
+          borderRadius={0} // Dynamic border radius value
+          color={"#009FFD"} // Dynamic colored buble
+          zIndex={-1}
+          width={300}
+          height={300}
+        />
       </div>
     </>
   );

@@ -1,5 +1,6 @@
 .navbar {
-  background-color: #2c1f4a;
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
   z-index: 1;
 }
 

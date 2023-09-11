@@ -10,7 +10,7 @@ const Segment = () => {
         borderRadius={473} // Dynamic border radius value
         color={"#009FFD"} // Dynamic colored buble
         zIndex={-1}
-        width={300}
+        width={30}
         height={400}
       />
       <div className="mar-x mb-20 xl:mb-40 relative">

@@ -49,7 +49,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="flex flex-col lg:mb-16 mar-x items-center pt-16 md:pt-2 lg:flex-row-reverse lg:justify-center lg:items-center  md:ms-11 lg:mx-5">
+    <div className="flex flex-col lg:mb-16 mar-x items-center lg:pt-16 md:pt-2 lg:flex-row-reverse lg:justify-center lg:items-center  md:ms-11 lg:mx-5">
       {/* first part: image */}
       <div className="mx-auto">
         <img

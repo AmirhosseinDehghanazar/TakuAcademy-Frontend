@@ -5,22 +5,22 @@
 
 /* getting all images */
 .bg-dart {
-  background: url("../../../assets/question/icon1.png");
+  background: url("../../../assets/question/icon1.svg");
 }
 .bg-check {
-  background: url("../../../assets/question/icon2.png");
+  background: url("../../../assets/question/icon2.svg");
 }
 .bg-up {
-  background: url("../../../assets/question/icon3.png");
+  background: url("../../../assets/question/icon3.svg");
 }
 .bg-per {
-  background: url("../../../assets/question/icon4.png");
+  background: url("../../../assets/question/icon4.svg");
 }
 .bg-person {
-  background: url("../../../assets/question/icon5.png");
+  background: url("../../../assets/question/icon5.svg");
 }
 .bg-chat {
-  background: url("../../../assets/question/icon6.png");
+  background: url("../../../assets/question/icon6.svg");
 }
 
 /* this css goes for all icons in text */

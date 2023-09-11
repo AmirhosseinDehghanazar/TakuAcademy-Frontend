@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/navbar/logo-nav.png";
+import logo from "../../assets/navbar/logo-nav.svg";
 import "./footer.css";
 
 const Footer = () => {
@@ -10,10 +10,22 @@ const Footer = () => {
         <img width={88} className="lg:w-32" src={logo} />
         <div className="bg-all-footer bg-line-mobile" />
         <div className="flex gap-1 md:gap-3 ">
-          <div className="bg-icon p-6 rounded-full thin-border bg-youtube" />
-          <div className="bg-icon p-6 rounded-full thin-border bg-link" />
-          <div className="bg-icon p-6 rounded-full thin-border bg-telegram" />
-          <div className="bg-icon p-6 rounded-full thin-border bg-instagram" />
+          <a
+            href=""
+            className="bg-icon p-6 rounded-full thin-border bg-youtube"
+          ></a>
+          <a
+            href=""
+            className="bg-icon p-6 rounded-full thin-border bg-link"
+          ></a>
+          <a
+            href=""
+            className="bg-icon p-6 rounded-full thin-border bg-telegram"
+          ></a>
+          <a
+            href=""
+            className="bg-icon p-6 rounded-full thin-border bg-instagram"
+          ></a>
         </div>
       </div>
 

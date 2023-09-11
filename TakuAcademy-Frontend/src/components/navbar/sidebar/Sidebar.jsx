@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import arrow from "../../../assets/navbar/arrow-down.png";
+import arrow from "../../../assets/navbar/arrow-down.svg";
 import "./sidebar.css";
-
+import close from "../../../assets/navbar/close.svg";
 const Sidebar = ({ sidebar, closeSidebar }) => {
   const [showLinks, setShowLinks] = useState(false);
 
@@ -15,7 +15,9 @@ const Sidebar = ({ sidebar, closeSidebar }) => {
           : "primary-navigation sidebar-close"
       }
     >
-      <button onClick={closeSidebar}>close</button>
+      <button onClick={closeSidebar}>
+        <img src={close} alt="" />
+      </button>
       <div>
         <a className="link-hover" href="#">
           صفحه اصلی

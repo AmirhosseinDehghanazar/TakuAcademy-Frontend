@@ -2,7 +2,7 @@ import React from "react";
 import "./segment.css";
 const Segment = () => {
   return (
-    <div className="segment-parent xl:mx-12 2xl:mx-24">
+    <div className="segment-parent xl:mx-12 2xl:mx-24 animate-scaleUp">
       <div className="mar-x mb-20 xl:mb-40 relative">
         {/* element below is the blue Rectangle over the over one */}
         <div className="h-60 mb-16 thin-border rounded-lg bg-cusDarkBlue sectionRounder">

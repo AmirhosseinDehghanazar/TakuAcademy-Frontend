@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import arrow from "../../assets/navbar/arrow-down.png";
-import Logo from "../../assets/navbar/Logo-nav.png";
-import face from "../../assets/navbar/face.png";
-import searchIcon from "../../assets/navbar/search.png";
-import hamburger from "../../assets/navbar/menu.png";
+import arrow from "../../assets/navbar/arrow-down.svg";
+import Logo from "../../assets/navbar/Logo-nav.svg";
+import face from "../../assets/navbar/face.svg";
+import searchIcon from "../../assets/navbar/search.svg";
+import hamburger from "../../assets/navbar/menu.svg";
 import "./navbar.css";
 import Sidebar from "./sidebar/Sidebar";
 import Hamburger from "hamburger-react";
@@ -20,11 +20,11 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="lg:hidden">
+      <div className="lg:hidden ">
         <Sidebar sidebar={sidebar} closeSidebar={closeSidebar} />
       </div>
 
-      <div>
+      <div className="fade-in lg:mt-8">
         {/* parent */}
         <div className="flex py-3 mb-3 navbar md:relative w-full justify-around gap-5 sm:gap-32 md:gap-60 lg:gap-16 xl:gap-36 transition-all items-center">
           {/* firat part of nav includes: menue & logo */}
@@ -59,7 +59,7 @@ const Navbar = () => {
               <a className="transition-all hover:text-cyan-600" href="#">
                 دوره‌ها
               </a>
-              <img className="arrow mt-1" src={arrow} />
+              <img className="arrow  mt-1" src={arrow} />
               <div className="dropdown-menu absolute top-6 rounded-lg overflow-hidden">
                 <a href="#">یک</a>
                 <a href="#">دو</a>

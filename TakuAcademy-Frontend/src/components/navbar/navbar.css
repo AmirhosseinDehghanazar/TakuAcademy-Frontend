@@ -6,7 +6,7 @@
 
 /* background image for side-bar-taggle */
 .bg-hamburger {
-  background: url("../../assets/navbar/menu.png");
+  background: url("../../assets/navbar/menu.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

@@ -1,6 +1,6 @@
 import React from "react";
 import "./question.css";
-import question from "../../../assets/question/question.png";
+import question from "../../../assets/question/question.svg";
 
 const Question = () => {
   return (
@@ -8,7 +8,7 @@ const Question = () => {
       {/* image element */}
       <div>
         <img
-          className="object-cover transition-all md:max-w-lg xl:max-w-2xl"
+          className="floating-image object-cover transition-all md:max-w-lg xl:max-w-2xl"
           src={question}
         />
       </div>

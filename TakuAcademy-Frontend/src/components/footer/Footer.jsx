@@ -20,7 +20,7 @@ const Footer = () => {
       {/* information */}
       <div className="flex  flex-col lg:flex-row justify-between lg:gap-10 2xl:gap-0">
         <div className="mb-10 max-w-sm">
-          <div className="text-xl font-semibold mb-3 inline-block">
+          <div className="text-xl font-semibold mb-5 inline-block">
             درباره آکادمی تاکو
           </div>
           <p className="mb-4 light">
@@ -37,7 +37,9 @@ const Footer = () => {
 
         {/* dastresi */}
         <div>
-          <p className="text-xl font-semibold mb-8 inline-block">دسترسی سریع</p>
+          <p className="text-xl font-semibold mb-5 inline-block whitespace-nowrap">
+            دسترسی سریع
+          </p>
           {/* first one include two of them */}
           <div className="flex flex-col light justify-start items-start gap-5 lg:gap-4 mb-10">
             <div className="flex lg:flex-col justify-start gap-10 lg:gap-4 items-center">
@@ -67,7 +69,7 @@ const Footer = () => {
 
         {/* contact */}
         <div className="mb-10">
-          <p className="text-xl font-semibold  inline-block mb-5">
+          <p className="text-xl font-semibold  mb-5 inline-block">
             ارتباط با ما
           </p>
           <div className="flex light flex-col justify-center gap-4">

@@ -1,7 +1,7 @@
 .buble {
   transition: all 0.2s;
 }
-
+/* blur and width change based on screen size i had to change blur for better visual */
 @media screen and (max-width: 550px) {
   .buble {
     width: 50vw;

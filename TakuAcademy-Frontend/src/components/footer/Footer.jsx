@@ -4,9 +4,9 @@ import "./footer.css";
 
 const Footer = () => {
   return (
-    <div className="mar-x ">
+    <div className="footer">
       {/* header */}
-      <div className="flex justify-center items-center gap-1 md:gap-4 mb-10">
+      <div className="flex justify-center items-center gap-1 md:gap-4 mb-10 ">
         <img width={88} className="lg:w-32" src={logo} />
         <div className="bg-all-footer bg-line-mobile" />
         <div className="flex gap-1 md:gap-3 ">

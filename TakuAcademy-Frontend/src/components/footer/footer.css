@@ -1,3 +1,18 @@
+/* footer margin on left and right */
+.footer {
+  margin-left: 5.5%;
+  margin-right: 5.5%;
+  max-width: 1360px;
+}
+
+@media screen and (min-width: 1550px) {
+  .footer {
+    margin: auto;
+  }
+}
+
+/* footer ends here */
+
 .bg-line-mobile {
   background: url("../../assets/footer/line-mobile.png");
   width: 100%;

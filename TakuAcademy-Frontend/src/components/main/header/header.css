@@ -22,11 +22,6 @@
   font-family: "Peyda";
 }
 
-.floating-image {
-  /* position: absolute; */
-  animation: float 3s ease infinite; /* Customize animation duration and timing function */
-}
-
 @keyframes float {
   0%,
   100% {
@@ -35,4 +30,16 @@
   50% {
     transform: translateY(10px); /* Adjust the floating height */
   }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out; /* Adjust the animation duration as needed */
 }

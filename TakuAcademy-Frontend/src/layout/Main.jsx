@@ -27,7 +27,7 @@ const Main = () => {
 
   return (
     <>
-      <div className="overflow-hidden relative">
+      <div className="overflow-hidden relative ">
         <div>
           {buble.map((b, i) =>
             i % 2 !== 0 ? (

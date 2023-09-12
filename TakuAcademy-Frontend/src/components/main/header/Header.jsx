@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import lady from "../../../assets/header/lady-on-pc.png";
+import lady from "../../../assets/header/lady-on-pc.svg";
 import "./header.css";
 import { CustomNumeralNumericFormat } from "../../numeric";
 import headerBigLine from "../../../assets/header/headerBigLine.svg";
@@ -49,7 +49,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="flex flex-col lg:mb-16 mar-x items-center lg:pt-16 md:pt-2 lg:flex-row-reverse lg:justify-center lg:items-center  md:ms-11 lg:mx-5">
+    <div className="flex flex-col lg:mb-16 mar-x items-center lg:pt-16 md:pt-2 lg:flex-row-reverse lg:justify-center lg:items-center  md:ms-11 lg:mx-5 animate-slideInFromBottom">
       {/* first part: image */}
       <div className="mx-auto">
         <img

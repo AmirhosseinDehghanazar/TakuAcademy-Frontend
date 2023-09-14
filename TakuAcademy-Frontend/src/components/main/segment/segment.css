@@ -7,16 +7,17 @@
   width: 100%;
   z-index: -1;
 }
-.cube-manager {
-  max-width: 80vw;
-
-  overflow: auto;
-}
 
 .bg-cube {
   background-color: #add8e6;
   color: #1e1e1e;
   display: inline-block;
+  max-width: 130px;
+}
+@media screen and (min-width: 1280px) {
+  .bg-cube {
+    max-width: 190px;
+  }
 }
 .sectionRounder {
   border-radius: 20px;

@@ -3,10 +3,8 @@ import arrow from "../../assets/navbar/arrow-down.svg";
 import Logo from "../../assets/navbar/Logo-nav.svg";
 import face from "../../assets/navbar/face.svg";
 import searchIcon from "../../assets/navbar/search.svg";
-import hamburger from "../../assets/navbar/menu.svg";
 import "./navbar.css";
 import Sidebar from "./sidebar/Sidebar";
-import Hamburger from "hamburger-react";
 
 const Navbar = () => {
   // adding state for search icon: on click renders searchComponent

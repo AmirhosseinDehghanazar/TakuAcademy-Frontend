@@ -1,6 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./segment.css";
+import Slider from "react-slick";
 const Segment = () => {
+  const [slidesToShow, setSlidesToShow] = useState(3);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      if (window.innerWidth < 550) {
+        setSlidesToShow(2);
+      } else if (window.innerWidth < 768) {
+        setSlidesToShow(3);
+      } else if (window.innerWidth < 1024) {
+        setSlidesToShow(4);
+      } else if (window.innerWidth > 1024) {
+        setSlidesToShow(5);
+      }
+    });
+  }, [window.innerWidth]);
+
   return (
     <div className="segment-parent xl:mx-12 2xl:mx-24 animate-scaleUp">
       <div className="mar-x mb-20 xl:mb-40 relative">
@@ -31,50 +48,59 @@ const Segment = () => {
           </div>
 
           {/* this div is parent for all Cubes */}
-          <div className=" whitespace-nowrap text-center cube-manager mx-auto mt-8 lg:mt-12 xl:mt-0">
+
+          <div className=" whitespace-nowrap text-center mx-auto mt-8 lg:mt-12 xl:mt-0">
             {/* cube; map?*/}
-            <a
-              href="#"
-              className=" bg-cube font-semibold px-7 py-6 rounded-md xl:px-14 xl:py-12 ms-10 me-10 advancedRounder lg:mt-6 "
+            <Slider
+              slidesToShow={slidesToShow}
+              arrows
+              slidesToScroll={2}
+              swipe
+              className="px-5"
             >
-              <div className="bg-seg-medal bg-img  mb-3 w-16 h-10 xl:w-20 xl:h-14"></div>
-              <div>لورم اپسیوم</div>
-            </a>
-            <a
-              href="#"
-              className=" bg-cube font-semibold px-7 py-6 rounded-md xl:px-14 xl:py-12 me-10 advancedRounder"
-            >
-              <div className="bg-seg-college bg-img mb-3 w-16 h-10 xl:w-20 xl:h-14"></div>
-              <div>لورم اپسیوم</div>
-            </a>
-            <a
-              href="#"
-              className=" bg-cube font-semibold px-7 py-6 rounded-md xl:px-14 xl:py-12 me-10 advancedRounder"
-            >
-              <div className="bg-seg-rocket bg-img  mb-3 w-16 h-10 xl:w-20 xl:h-14"></div>
-              <div>لورم اپسیوم</div>
-            </a>
-            <a
-              href="#"
-              className=" bg-cube font-semibold px-7 py-6 rounded-md xl:px-14 xl:py-12 me-10 advancedRounder"
-            >
-              <div className="bg-seg-dart bg-img mb-3 w-16 h-10 xl:w-20 xl:h-14"></div>
-              <div>لورم اپسیوم</div>
-            </a>
-            <a
-              href="#"
-              className=" bg-cube font-semibold px-7 py-6 rounded-md xl:px-14 xl:py-12 me-10 advancedRounder"
-            >
-              <div className="bg-seg-code bg-img mb-3 w-16 h-10 xl:w-20 xl:h-14"></div>
-              <div>لورم اپسیوم</div>
-            </a>
-            <a
-              href="#"
-              className=" bg-cube font-semibold px-7 py-6 rounded-md xl:px-14 xl:py-12 me-10 advancedRounder"
-            >
-              <div className="bg-seg-mind bg-img mb-3 w-16 h-10 xl:w-20 xl:h-14"></div>
-              <div>لورم اپسیوم</div>
-            </a>
+              <a
+                href="#"
+                className=" bg-cube font-semibold px-7 py-6 rounded-md xl:px-14 xl:py-12 advancedRounder  "
+              >
+                <div className="bg-seg-medal bg-img  mb-3 w-17 h-10 xl:w-20 xl:h-14"></div>
+                <div>لورم اپسیوم</div>
+              </a>
+              <a
+                href="#"
+                className=" bg-cube font-semibold px-7 py-6 rounded-md xl:px-14 xl:py-12  advancedRounder"
+              >
+                <div className="bg-seg-college bg-img mb-3 w-17 h-10 xl:w-20 xl:h-14"></div>
+                <div>لورم اپسیوم</div>
+              </a>
+              <a
+                href="#"
+                className=" bg-cube font-semibold px-7 py-6 rounded-md xl:px-14 xl:py-12  advancedRounder"
+              >
+                <div className="bg-seg-rocket bg-img  mb-3 w-17 h-10 xl:w-20 xl:h-14"></div>
+                <div>لورم اپسیوم</div>
+              </a>
+              <a
+                href="#"
+                className=" bg-cube font-semibold px-7 py-6 rounded-md xl:px-14 xl:py-12  advancedRounder"
+              >
+                <div className="bg-seg-dart bg-img mb-3 w-17 h-10 xl:w-20 xl:h-14"></div>
+                <div>لورم اپسیوم</div>
+              </a>
+              <a
+                href="#"
+                className=" bg-cube font-semibold px-7 py-6 rounded-md xl:px-14 xl:py-12  advancedRounder"
+              >
+                <div className="bg-seg-code bg-img mb-3 w-17 h-10 xl:w-20 xl:h-14"></div>
+                <div>لورم اپسیوم</div>
+              </a>
+              <a
+                href="#"
+                className=" bg-cube font-semibold px-7 py-6 rounded-md xl:px-14 xl:py-12  advancedRounder"
+              >
+                <div className="bg-seg-mind bg-img mb-3 w-17 h-10 xl:w-20 xl:h-14"></div>
+                <div>لورم اپسیوم</div>
+              </a>
+            </Slider>
             {/* cubes end here */}
 
             {/* cube element end here */}

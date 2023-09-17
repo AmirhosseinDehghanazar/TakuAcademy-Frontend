@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import arrow from "../../../assets/navbar/arrow-down.svg";
 import "./sidebar.css";
 import close from "../../../assets/navbar/close.svg";
+
 const Sidebar = ({ sidebar, closeSidebar }) => {
   const [showLinks, setShowLinks] = useState(false);
 

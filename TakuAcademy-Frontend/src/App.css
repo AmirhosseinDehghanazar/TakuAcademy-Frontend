@@ -11,7 +11,7 @@
 }
 
 .bg-asatid {
-  background-image: linear-gradient(90deg, rgb(51, 51, 69, 0.42), #333345),
+  background-image: linear-gradient(rgb(51, 51, 69, 0.42), transparent),
     url("./assets/header/header-background.png");
   background-repeat: no-repeat;
   background-size: cover;

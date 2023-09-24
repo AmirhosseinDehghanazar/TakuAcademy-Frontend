@@ -1,12 +1,13 @@
-import React from "react";
-import Navbar from "../components/navbar/Navbar";
-import Header from "../components/main/header/Header";
-import Segment from "../components/main/segment/Segment";
-import Courses from "../components/main/courses/Courses";
-import Question from "../components/main/question/Question";
-import Comment from "../components/main/comment/Comment";
-import Footer from "../components/footer/Footer";
-import BubleColor from "../components/BubleColor/BubleColor";
+import {
+  BubleColor,
+  Comment,
+  Courses,
+  Footer,
+  Header,
+  Navbar,
+  Question,
+  Segment,
+} from "../components";
 
 const Main = () => {
   const buble = [
@@ -57,8 +58,11 @@ const Main = () => {
         </div>
 
         <div>
-          <Navbar />
-          <Header />
+          <div className="bg-asatid">
+            <Navbar />
+            <Header />
+          </div>
+
           <Segment />
           <Courses />
           <Question />

@@ -10,6 +10,13 @@
   background-color: #888;
 }
 
+.bg-asatid {
+  background-image: linear-gradient(90deg, rgb(51, 51, 69, 0.42), #333345),
+    url("./assets/header/header-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .main-page {
   overflow: hidden;
 }

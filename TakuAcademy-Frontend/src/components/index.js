@@ -1,0 +1,9 @@
+export { default as LoadingScreen } from "./LoadingScreen/LoadingScreen";
+export { default as BubleColor } from "./BubleColor/BubleColor";
+export { default as Footer } from "./footer/Footer";
+export { default as Navbar } from "./navbar/Navbar";
+export { default as Comment } from "./main/comment/Comment";
+export { default as Courses } from "./main/courses/Courses";
+export { default as Header } from "./main/header/Header";
+export { default as Question } from "./main/question/Question";
+export { default as Segment } from "./main/segment/Segment";

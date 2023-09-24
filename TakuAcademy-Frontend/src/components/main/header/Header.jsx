@@ -3,6 +3,7 @@ import lady from "../../../assets/header/lady-on-pc.svg";
 import "./header.css";
 import { CustomNumeralNumericFormat } from "../../numeric";
 import headerBigLine from "../../../assets/header/headerBigLine.svg";
+
 const Header = () => {
   // fake data to test
   const numbersData = [
@@ -49,14 +50,14 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="flex flex-col lg:mb-16 mar-x items-center lg:pt-16 md:pt-2 lg:flex-row-reverse lg:justify-center lg:items-center  md:ms-11 lg:mx-5 animate-slideInFromBottom">
-      {/* first part: image */}
+    <div className="flex flex-col mb-10 lg:mb-16 mar-x items-center lg:pt-16 md:pt-2 lg:flex-row-reverse lg:justify-center lg:items-center  md:ms-11 lg:mx-5 animate-slideInFromBottom">
+      {/* first part: image
       <div className="mx-auto">
         <img
           className="object-cover transition-all floating-image md:max-w-lg xl:max-w-2xl"
           src={lady}
         />
-      </div>
+      </div> */}
 
       {/* second part:texts */}
       <div className="flex flex-col mar-x max-w-screen-sm xl:max-w-screen-lg">
@@ -102,7 +103,7 @@ const Header = () => {
           </a>
         </div>
 
-        {/* React Number Format */}
+        {/* React Number Format
         <div className="flex justify-center lg:justify-start gap-4 md:gap-16 lg:gap-7 my-6 items-center">
           {numbersData.map((data, index) => (
             <div className="flex flex-col items-center " key={index}>
@@ -115,7 +116,7 @@ const Header = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
         {/* Numbers group ends here */}
       </div>
     </div>

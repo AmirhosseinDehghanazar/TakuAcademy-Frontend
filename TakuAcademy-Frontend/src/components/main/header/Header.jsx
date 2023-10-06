@@ -50,7 +50,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="relative z-[1] flex flex-col lg:mb-16 mar-x items-center pt-[8vw] lg:justify-center  animate-slideInFromBottom">
+    <div className="relative z-[1] flex flex-col lg:mb-16 mar-x items-center pt-[7vw] lg:justify-center  animate-slideInFromBottom">
       {/* first part: image
       <div className="mx-auto">
         <img
@@ -60,7 +60,7 @@ const Header = () => {
       </div> */}
 
       {/* second part:texts */}
-      <div className="flex flex-col mar-x max-w-screen-sm xl:max-w-screen-lg">
+      <div className="flex flex-col max-w-screen-sm xl:max-w-[1130px]">
         {/* first part of texts */}
         {/* <div className="flex gap-2 items-center text-start lg:mb-7 mb:5">
           <div className="background-props bg-flash bg-slate-500"></div>
@@ -68,11 +68,9 @@ const Header = () => {
         </div> */}
         {/* intro */}
         <div>
-          <div>
-            <p className="text-4xl md:text-6xl font-bold text-center">
-              آموزشی با کیفیت همراه با اساتید برجسته و اخذ معتبرترن مدارک بین
-              المللی
-            </p>
+          <div className="text-4xl md:text-6xl 2xl:text-[74px] md:leading-[80px] font-bold text-center">
+            آموزشی با کیفیت همراه با اساتید برجسته و اخذ معتبرترن مدارک بین
+            المللی
           </div>
           {/* <div className="text-4xl font-bold text-center leading-normal xl:text-6xl">
             آموزشی با کیفیت با اساتید برجسته

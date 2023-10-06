@@ -50,7 +50,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="relative z-10 flex flex-col mb-10 lg:mb-16 mar-x items-center lg:pt-16 md:pt-2 lg:flex-row-reverse lg:justify-center lg:items-center  md:ms-11 lg:mx-5 animate-slideInFromBottom">
+    <div className="relative z-[1] flex flex-col lg:mb-16 mar-x items-center pt-[8vw] lg:justify-center  animate-slideInFromBottom">
       {/* first part: image
       <div className="mx-auto">
         <img
@@ -62,13 +62,19 @@ const Header = () => {
       {/* second part:texts */}
       <div className="flex flex-col mar-x max-w-screen-sm xl:max-w-screen-lg">
         {/* first part of texts */}
-        <div className="flex gap-2 items-center text-start lg:mb-7 mb:5">
+        {/* <div className="flex gap-2 items-center text-start lg:mb-7 mb:5">
           <div className="background-props bg-flash bg-slate-500"></div>
           <p className="lg:text-25 text-lg">آکادمی تاکو</p>
-        </div>
+        </div> */}
         {/* intro */}
         <div>
-          <div className="text-4xl font-bold leading-normal xl:text-6xl">
+          <div>
+            <p className="text-4xl md:text-6xl font-bold text-center">
+              آموزشی با کیفیت همراه با اساتید برجسته و اخذ معتبرترن مدارک بین
+              المللی
+            </p>
+          </div>
+          {/* <div className="text-4xl font-bold text-center leading-normal xl:text-6xl">
             آموزشی با کیفیت با اساتید برجسته
             <span className="hidden md:inline-block relative right-96 bottom-3">
               <img src={headerBigLine} alt="" />
@@ -76,29 +82,29 @@ const Header = () => {
           </div>
           <div className="text-4xl font-bold leading-normal xl:text-6xl">
             در تمام حوزه‌های علوم کامپیوتر
-          </div>
+          </div> */}
         </div>
 
         {/* lorem */}
-        <div className="my-5 leading-loose light">
+        <div className="my-5 leading-loose light text-center max-w-3xl mx-auto">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
           از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
           سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
         </div>
 
         {/*two buttons parent */}
-        <div className="flex flex-col gap-3 md:flex-row text-center my-4 w-full">
+        <div className="flex flex-col gap-3 md:gap-5 md:flex-row md:justify-center text-center my-4 w-full">
           <a href="#">
-            <button className="w-full bg-gradient rounded-lg py-2.5 arrow-btn md:px-5">
+            <button className="w-full bg-gradient  rounded-[18px] py-2.5 arrow-btn md:px-5">
               مشاهده دوره‌ها
               <span className="background-props bg-arrow bg-arrow-w"></span>
             </button>
           </a>
 
           <a href="#">
-            <button className="w-full bg-cusWhite text-cusBlack rounded-lg py-2.5 arrow-btn md:px-5">
+            <button className="w-full bg-transparent border border-cusWhite/60 text-cusWhite rounded-[18px] py-2.5 arrow-btn md:px-5">
               مشاهده دوره‌ها
-              <span className="background-props bg-arrow bg-arrow-b"></span>
+              <span className="background-props bg-arrow bg-arrow-w"></span>
             </button>
           </a>
         </div>

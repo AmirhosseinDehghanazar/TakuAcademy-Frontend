@@ -50,7 +50,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="flex flex-col mb-10 lg:mb-16 mar-x items-center lg:pt-16 md:pt-2 lg:flex-row-reverse lg:justify-center lg:items-center  md:ms-11 lg:mx-5 animate-slideInFromBottom">
+    <div className="relative z-10 flex flex-col mb-10 lg:mb-16 mar-x items-center lg:pt-16 md:pt-2 lg:flex-row-reverse lg:justify-center lg:items-center  md:ms-11 lg:mx-5 animate-slideInFromBottom">
       {/* first part: image
       <div className="mx-auto">
         <img

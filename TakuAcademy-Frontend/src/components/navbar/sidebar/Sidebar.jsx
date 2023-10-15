@@ -1,14 +1,32 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import arrow from "../../../assets/navbar/arrow-down.svg";
 import "./sidebar.css";
 import close from "../../../assets/navbar/close.svg";
 
 const Sidebar = ({ sidebar, closeSidebar }) => {
   const [showLinks, setShowLinks] = useState(false);
+  const sidebarRef = useRef(null);
+
+  useEffect(() => {
+    // Add event listener to the document object
+    document.addEventListener("mousedown", handleClickOutside);
+
+    // Remove event listener when the component unmounts
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  function handleClickOutside(event) {
+    if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+      closeSidebar();
+    }
+  }
 
   return (
     // sidebar parent checks for sidebar state
     <div
+      ref={sidebarRef}
       id="sidebar"
       className={
         sidebar

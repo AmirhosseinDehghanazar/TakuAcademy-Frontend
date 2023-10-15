@@ -24,7 +24,7 @@ const Navbar = () => {
 
       <div className="fade-in lg:pt-8">
         {/* parent */}
-        <div className="flex py-3 mb-3 navbar md:relative w-full justify-around gap-5 sm:gap-32 md:gap-60 lg:gap-16 xl:gap-36 transition-all items-center">
+        <div className="flex py-3 mb-3 navbar relative w-full justify-around gap-5 sm:gap-32 md:gap-60 lg:gap-16 xl:gap-36 transition-all items-center">
           {/* firat part of nav includes: menu & logo */}
           <div className="flex items-center justify-center gap-4">
             <button

@@ -1,5 +1,9 @@
 # Taku Academy Frontend
 
+Attention: It's merely a concept!
+
+
+
 Welcome to the Taku Academy Frontend project! This is the frontend part of our web application. In this README, you will find information on how to set up and run the project locally for development purposes.
 
 ## Table of Contents
